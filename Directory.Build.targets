@@ -92,4 +92,114 @@
       <Exec WorkingDirectory="$(MSBuildThisFileDirectory)"
         Command="dotnet tool run reportgenerator -- -reports:&quot;$(MetricsOpenCoverDirectory)/**/coverage.opencover.xml&quot; -targetdir:&quot;$(MetricsReportGeneratorDirectory)&quot; -reporttypes:&quot;Html&quot;" />
   </Target>
+
+    <!-- Generate Roslyn code metrics (LOC, cyclomatic complexity, etc.) for all source projects. -->
+  <PropertyGroup Condition="'$(IsTestingPlatformApplication)' != 'true'">
+    <MetricsRoslynDirectory>$(MSBuildThisFileDirectory)Metrics/Roslyn</MetricsRoslynDirectory>
+    <MetricsRoslynOutput>$(MetricsRoslynDirectory)/$(MSBuildProjectName).Metrics.xml</MetricsRoslynOutput>
+  </PropertyGroup>
+
+  <!--
+    ============================================================
+    Windows x64 alternative (simpler, no workarounds needed)
+    ============================================================
+    On Windows, Metrics.exe runs natively under the .NET Framework CLR that ships
+    with every Windows install, and the bundled MSBuildLocator can discover Visual
+    Studio (or the dotnet SDK via VS Build Tools) through COM/registry without any
+    extra help.  The full setup reduces to three steps:
+
+    1. Pin the package version in Directory.Packages.props — only one package is
+       needed; Microsoft.Build.Locator does NOT need to be listed separately:
+
+         <PackageVersion Include="Microsoft.CodeAnalysis.Metrics" Version="4.14.0" />
+
+    2. Reference it (build-time only, path property only) — same as Linux:
+
+         <ItemGroup Condition="'$(IsTestingPlatformApplication)' != 'true'">
+           <PackageReference Include="Microsoft.CodeAnalysis.Metrics"
+                             PrivateAssets="all"
+                             IncludeAssets="none"
+                             GeneratePathProperty="true" />
+         </ItemGroup>
+
+    3. Invoke Metrics.exe directly — no 'dotnet exec', no runtimeconfig injection,
+       no DLL replacement:
+
+         <Target Name="GenerateRoslynMetrics"
+                 AfterTargets="Build"
+                 Condition="'$(IsTestingPlatformApplication)' != 'true'">
+           <PropertyGroup>
+             <_MetricsExeFile>$(PkgMicrosoft_CodeAnalysis_Metrics)\Metrics\Metrics.exe</_MetricsExeFile>
+           </PropertyGroup>
+           <MakeDir Directories="$(MetricsRoslynDirectory)" />
+           <Exec Command='"$(_MetricsExeFile)" /project:"$(MSBuildProjectFullPath)" /out:"$(MetricsRoslynOutput)" /quiet'
+                 WorkingDirectory="$(MSBuildProjectDirectory)"
+                 StandardOutputImportance="Low"
+                 StandardErrorImportance="High" />
+         </Target>
+
+    The package also ships a ready-made targets file at
+      buildTransitive/Microsoft.CodeAnalysis.Metrics.targets
+    which registers a "Metrics" MSBuild target automatically upon package restore.
+    That target uses the same Exec pattern above and exposes $(MetricsOutputFile)
+    to control the output path.  On Windows it is therefore also possible to skip
+    writing a custom target entirely and just set:
+
+         <PackageReference Include="Microsoft.CodeAnalysis.Metrics" Version="4.14.0" />
+         <MetricsOutputFile>$(MetricsRoslynDirectory)/$(MSBuildProjectName).Metrics.xml</MetricsOutputFile>
+
+    then call "dotnet msbuild -t:Metrics" — the package handles the rest.
+    This auto-imported target does NOT work on Linux/macOS for the same reasons
+    described below (hard crash in the bundled MSBuildLocator).
+  -->
+
+  <ItemGroup Condition="'$(IsTestingPlatformApplication)' != 'true' and '$(ManagePackageVersionsCentrally)' != 'false'">
+    <!-- Referenced solely to populate $(PkgMicrosoft_CodeAnalysis_Metrics) path property; no compile/runtime assets. -->
+    <PackageReference Include="Microsoft.CodeAnalysis.Metrics"
+                      PrivateAssets="all"
+                      IncludeAssets="none"
+                      GeneratePathProperty="true" />
+    <!-- Newer MSBuildLocator that knows how to locate the dotnet SDK on Linux/macOS. -->
+    <PackageReference Include="Microsoft.Build.Locator"
+                      PrivateAssets="all"
+                      IncludeAssets="none"
+                      GeneratePathProperty="true" />
+  </ItemGroup>
+
+  <Target Name="GenerateRoslynMetrics"
+          AfterTargets="Build"
+          Condition="'$(IsTestingPlatformApplication)' != 'true' and '$(ManagePackageVersionsCentrally)' != 'false'">
+    <PropertyGroup>
+      <_MetricsExeDir>$([System.IO.Path]::Combine('$(PkgMicrosoft_CodeAnalysis_Metrics)', 'Metrics'))</_MetricsExeDir>
+      <_MetricsExeFile>$([System.IO.Path]::Combine('$(_MetricsExeDir)', 'Metrics.exe'))</_MetricsExeFile>
+      <_MetricsRuntimeConfig>$([System.IO.Path]::Combine('$(_MetricsExeDir)', 'Metrics.runtimeconfig.json'))</_MetricsRuntimeConfig>
+      <_MetricsBuildLocatorSrc>$([System.IO.Path]::Combine('$(PkgMicrosoft_Build_Locator)', 'lib', 'net8.0', 'Microsoft.Build.Locator.dll'))</_MetricsBuildLocatorSrc>
+      <_MetricsBuildLocatorDst>$([System.IO.Path]::Combine('$(_MetricsExeDir)', 'Microsoft.Build.Locator.dll'))</_MetricsBuildLocatorDst>
+    </PropertyGroup>
+
+    <MakeDir Directories="$(MetricsRoslynDirectory)" />
+
+    <!--
+      Cross-platform fix: Metrics.exe from the NuGet package targets .NET Framework 4.7.2 and
+      ships an MSBuildLocator that uses a Windows-only VS locator (crashes on Linux/macOS).
+      Running via 'dotnet exec' with a runtimeconfig.json loads the assembly under the .NET
+      runtime instead of the .NET Framework runtime.
+      Replacing the bundled MSBuildLocator with a newer version (1.9.1+) lets it find the
+      dotnet SDK on non-Windows platforms.
+    -->
+    <WriteLinesToFile
+      File="$(_MetricsRuntimeConfig)"
+      Lines='{"runtimeOptions":{"tfm":"net10.0","framework":{"name":"Microsoft.NETCore.App","version":"10.0.0"}}}'
+      Overwrite="true" />
+
+    <Copy SourceFiles="$(_MetricsBuildLocatorSrc)"
+          DestinationFiles="$(_MetricsBuildLocatorDst)"
+          SkipUnchangedFiles="true" />
+
+    <Exec Command='dotnet exec "$(_MetricsExeFile)" /project:"$(MSBuildProjectFullPath)" /out:"$(MetricsRoslynOutput)" /quiet'
+          WorkingDirectory="$(MSBuildProjectDirectory)"
+          StandardOutputImportance="Low"
+          StandardErrorImportance="High" />
+  </Target>
+
 </Project>

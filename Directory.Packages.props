@@ -94,5 +94,9 @@
     <PackageVersion Include="Scalar.AspNetCore" Version="2.8.6" />
     <!-- Before license change -->
     <PackageVersion Include="MediatR" Version="13.0.0" />
+    <!-- Roslyn code metrics: used solely at build time, not referenced by compiled output -->
+    <!-- Newer MSBuildLocator supports dotnet SDK discovery on Linux/macOS -->
+    <PackageVersion Include="Microsoft.CodeAnalysis.Metrics" Version="4.14.0" />
+    <PackageVersion Include="Microsoft.Build.Locator" Version="1.9.1" />
   </ItemGroup>
 </Project>
