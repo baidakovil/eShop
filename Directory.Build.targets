@@ -12,6 +12,12 @@
     <TrimmerSingleWarn>false</TrimmerSingleWarn>
   </PropertyGroup>
 
+  <Target Name="CreateMetricsSarifDirectory"
+          BeforeTargets="CoreCompile"
+          Condition="'$(ErrorLog)' != ''">
+    <MakeDir Directories="$([System.IO.Path]::GetDirectoryName('$(ErrorLog)'))" />
+  </Target>
+
     <!-- OpenCover xml:
       Collect OpenCover-format coverage via coverlet.MTP for all test projects
       (IsTestingPlatformApplication is set by MSTest.Sdk / xunit.v3.mtp-v2
