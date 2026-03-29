@@ -1,0 +1,128 @@
+{
+  "general": {
+    "runScripts": true,
+    "aggregateAfterScripts": true,
+    "verbosity": "normal",
+    "timeoutSeconds": 900,
+    "logTruncationLimit": 4000
+  },
+  "paths": {
+    "metricsDir": "Metrics",
+    "solutionName": "eShop",
+    "report": "Metrics/MetricsReport.g.json",
+    "readReport": "Metrics/MetricsReport.g.json",
+    "baseline": "Metrics/MetricsTemp/MetricsBaseline.g.json",
+    "thresholds": "Metrics/MetricsRules/MetricsReporterThresholds.json",
+    "outputHtml": "Metrics/MetricsReport.html",
+    "roslyn": [
+      "Metrics/Roslyn/Basket.API.Metrics.xml",
+      "Metrics/Roslyn/Catalog.API.Metrics.xml",
+      "Metrics/Roslyn/EventBus.Metrics.xml",
+      "Metrics/Roslyn/EventBusRabbitMQ.Metrics.xml",
+      "Metrics/Roslyn/Identity.API.Metrics.xml",
+      "Metrics/Roslyn/IntegrationEventLogEF.Metrics.xml",
+      "Metrics/Roslyn/OrderProcessor.Metrics.xml",
+      "Metrics/Roslyn/Ordering.API.Metrics.xml",
+      "Metrics/Roslyn/Ordering.Domain.Metrics.xml",
+      "Metrics/Roslyn/Ordering.Infrastructure.Metrics.xml",
+      "Metrics/Roslyn/PaymentProcessor.Metrics.xml",
+      "Metrics/Roslyn/WebApp.Metrics.xml",
+      "Metrics/Roslyn/WebAppComponents.Metrics.xml",
+      "Metrics/Roslyn/WebhookClient.Metrics.xml",
+      "Metrics/Roslyn/Webhooks.API.Metrics.xml",
+      "Metrics/Roslyn/eShop.AppHost.Metrics.xml",
+      "Metrics/Roslyn/eShop.ServiceDefaults.Metrics.xml"
+    ],
+    "sarif": [
+      "Metrics/Sarif/Basket.API.sarif",
+      "Metrics/Sarif/Catalog.API.sarif",
+      "Metrics/Sarif/ClientApp.sarif",
+      "Metrics/Sarif/EventBus.sarif",
+      "Metrics/Sarif/EventBusRabbitMQ.sarif",
+      "Metrics/Sarif/HybridApp.sarif",
+      "Metrics/Sarif/Identity.API.sarif",
+      "Metrics/Sarif/IntegrationEventLogEF.sarif",
+      "Metrics/Sarif/OrderProcessor.sarif",
+      "Metrics/Sarif/Ordering.API.sarif",
+      "Metrics/Sarif/Ordering.Domain.sarif",
+      "Metrics/Sarif/Ordering.Infrastructure.sarif",
+      "Metrics/Sarif/PaymentProcessor.sarif",
+      "Metrics/Sarif/WebApp.sarif",
+      "Metrics/Sarif/WebAppComponents.sarif",
+      "Metrics/Sarif/WebhookClient.sarif",
+      "Metrics/Sarif/Webhooks.API.sarif",
+      "Metrics/Sarif/eShop.AppHost.sarif",
+      "Metrics/Sarif/eShop.ServiceDefaults.sarif"
+    ],
+    "opencover": [
+      "Metrics/OpenCover/Basket.UnitTests/coverage.opencover.xml",
+      "Metrics/OpenCover/Catalog.FunctionalTests/coverage.opencover.xml",
+      "Metrics/OpenCover/ClientApp.UnitTests/coverage.opencover.xml",
+      "Metrics/OpenCover/Ordering.FunctionalTests/coverage.opencover.xml",
+      "Metrics/OpenCover/Ordering.UnitTests/coverage.opencover.xml"
+    ],
+    "suppressedSymbols": "Metrics/MetricsTemp/SuppressedSymbols.g.json",
+    "sourceCodeFolders": [ "src", "tests" ],
+    "baselineStoragePath": "Metrics/MetricsTemp/BaselineStorage",
+     "coverageHtmlDir": "http://127.0.0.1:8001/ReportGenerator/",
+    "solutionDirectory": ".",
+    "excludedMembers": "*b__*,*d__*,<Create>*,*<Main>*,<Clone>$,ctor,cctor,MoveNext,SetStateMachine,MoveNextAsync,DisposeAsync,Deconstruct,GetHashCode,ToString,Equals,PrintMembers,op_Equality,op_Inequality,get_*,set_*,add_*,remove_*",
+    "excludedTypes": "<>c,<-ctor>",
+    "excludedAssemblies": "Tests",
+    "excludeMethods": false,
+    "excludeProperties": false,
+    "excludeFields": true,
+    "excludeEvents": false,
+    "analyzeSuppressedSymbols": true,
+    "replaceBaseline": false
+  },
+  "scripts": {
+    "generate": [ "Metrics/Scripts/refresh-report.ps1" ],
+    "read": {
+      "byMetric": [
+        {
+          "metrics": [ "OpenCoverBranchCoverage", "OpenCoverSequenceCoverage", "OpenCoverCyclomaticComplexity", "OpenCoverNPathComplexity" ],
+          "path": "Metrics/Scripts/collect-coverage.ps1"
+        },
+        {
+          "metrics": [ "RoslynMaintainabilityIndex", "RoslynCyclomaticComplexity", "RoslynClassCoupling", "RoslynDepthOfInheritance", "RoslynSourceLines", "RoslynExecutableLines" ],
+          "path": "Metrics/Scripts/collect-sarif-and-roslyn.ps1"
+        },
+        {
+          "metrics": [ "SarifCaRuleViolations", "SarifIdeRuleViolations" ],
+          "path": "Metrics/Scripts/collect-sarif-and-roslyn.ps1"
+        }
+      ]
+    },
+    "test": {
+      "byMetric": [
+        {
+          "metrics": [ "OpenCoverBranchCoverage", "OpenCoverSequenceCoverage", "OpenCoverCyclomaticComplexity", "OpenCoverNPathComplexity" ],
+          "path": "Metrics/Scripts/collect-coverage.ps1"
+        },
+        {
+          "metrics": [ "RoslynMaintainabilityIndex", "RoslynCyclomaticComplexity", "RoslynClassCoupling", "RoslynDepthOfInheritance", "RoslynSourceLines", "RoslynExecutableLines" ],
+          "path": "Metrics/Scripts/collect-sarif-and-roslyn.ps1"
+        },
+        {
+          "metrics": [ "SarifCaRuleViolations", "SarifIdeRuleViolations" ],
+          "path": "Metrics/Scripts/collect-sarif-and-roslyn.ps1"
+        }
+      ]
+    }
+  },
+  "metricAliases": {
+    "OpenCoverSequenceCoverage": [ "SequenceCoverage", "Coverage" ],
+    "OpenCoverBranchCoverage": [ "BranchCoverage" ],
+    "OpenCoverCyclomaticComplexity": [ "OpenCoverComplexity" ],
+    "OpenCoverNPathComplexity": [ "NPath" ],
+    "RoslynMaintainabilityIndex": [ "Maintainability", "MaintainabilityIndex" ],
+    "RoslynCyclomaticComplexity": [ "Complexity", "CyclomaticComplexity", "cc", "cyclomatic" ],
+    "RoslynClassCoupling": [ "Coupling", "ClassCoupling" ],
+    "RoslynDepthOfInheritance": [ "Inheritance", "DepthOfInheritance" ],
+    "RoslynSourceLines": [ "SourceLines" ],
+    "RoslynExecutableLines": [ "ExecutableLines" ],
+    "SarifCaRuleViolations": [ "CaViolations" ],
+    "SarifIdeRuleViolations": [ "IdeViolations" ]
+  }
+}

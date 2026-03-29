@@ -1,0 +1,91 @@
+{
+  "metrics": [
+    {
+      "name": "OpenCoverSequenceCoverage",
+      "description": "Sequence (line) coverage percentage from OpenCover. Higher is better.",
+      "higherIsBetter": true,
+      "symbolThresholds": {
+        "Assembly":  { "warning": 60, "error": 40 },
+        "Namespace": { "warning": 60, "error": 40 },
+        "Type":      { "warning": 60, "error": 40 },
+        "Member":    { "warning": 60, "error": 40 }
+      }
+    },
+    {
+      "name": "OpenCoverBranchCoverage",
+      "description": "Branch coverage percentage from OpenCover. Higher is better.",
+      "higherIsBetter": true,
+      "symbolThresholds": {
+        "Assembly":  { "warning": 50, "error": 30 },
+        "Namespace": { "warning": 50, "error": 30 },
+        "Type":      { "warning": 50, "error": 30 },
+        "Member":    { "warning": 50, "error": 30 }
+      }
+    },
+    {
+      "name": "RoslynMaintainabilityIndex",
+      "description": "Maintainability index (0–100). Higher is better. < 65 is warning, < 40 is error.",
+      "higherIsBetter": true,
+      "symbolThresholds": {
+        "Assembly":  { "warning": 65, "error": 40 },
+        "Namespace": { "warning": 65, "error": 40 },
+        "Type":      { "warning": 65, "error": 40 },
+        "Member":    { "warning": 65, "error": 40 }
+      }
+    },
+    {
+      "name": "RoslynCyclomaticComplexity",
+      "description": "Cyclomatic complexity from Roslyn metrics. Lower is better.",
+      "higherIsBetter": false,
+      "symbolThresholds": {
+        "Assembly":  { "warning": null, "error": null },
+        "Namespace": { "warning": null, "error": null },
+        "Type":      { "warning": 20,   "error": 50   },
+        "Member":    { "warning": 12,   "error": 25   }
+      }
+    },
+    {
+      "name": "RoslynClassCoupling",
+      "description": "Class coupling count from Roslyn metrics. Lower is better.",
+      "higherIsBetter": false,
+      "symbolThresholds": {
+        "Assembly":  { "warning": null, "error": null },
+        "Namespace": { "warning": null, "error": null },
+        "Type":      { "warning": 50,   "error": 100   },
+        "Member":    { "warning": 15,   "error": 25   }
+      }
+    },
+    {
+      "name": "RoslynDepthOfInheritance",
+      "description": "Depth of inheritance from Roslyn metrics. Lower is better.",
+      "higherIsBetter": false,
+      "symbolThresholds": {
+        "Type": { "warning": 5, "error": 8 }
+      }
+    },
+    {
+      "name": "SarifCaRuleViolations",
+      "description": "Count of CA rule violations reported by analyzers. Lower is better.",
+      "higherIsBetter": false,
+      "symbolThresholds": {
+        "Solution":  { "warning": 50,  "error": 100  },
+        "Assembly":  { "warning": 20,  "error": 50   },
+        "Namespace": { "warning": 10,  "error": 25   },
+        "Type":      { "warning": 5,   "error": 10   },
+        "Member":    { "warning": 2,   "error": 5    }
+      }
+    },
+    {
+      "name": "SarifIdeRuleViolations",
+      "description": "Count of IDE rule violations reported by analyzers. Lower is better.",
+      "higherIsBetter": false,
+      "symbolThresholds": {
+        "Solution":  { "warning": 100, "error": 200  },
+        "Assembly":  { "warning": 40,  "error": 80   },
+        "Namespace": { "warning": 20,  "error": 40   },
+        "Type":      { "warning": 10,  "error": 20   },
+        "Member":    { "warning": 5,   "error": 10   }
+      }
+    }
+  ]
+}
