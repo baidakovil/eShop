@@ -1,5 +1,9 @@
 <Project>
 
+  <PropertyGroup>
+    <GenerateMetricsHtmlReportEnabled Condition="'$(GenerateMetricsHtmlReportEnabled)' == ''">true</GenerateMetricsHtmlReportEnabled>
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(PublishAot)' == 'true'">
     <!-- EventSource is disabled by default for non-ASP.NET AOT'd apps, re-enable it -->
     <EventSourceSupport>true</EventSourceSupport>
@@ -8,4 +12,84 @@
     <TrimmerSingleWarn>false</TrimmerSingleWarn>
   </PropertyGroup>
 
+    <!-- OpenCover xml:
+      Collect OpenCover-format coverage via coverlet.MTP for all test projects
+      (IsTestingPlatformApplication is set by MSTest.Sdk / xunit.v3.mtp-v2
+      SDKs automatically). -->
+    <PropertyGroup Condition="'$(IsTestingPlatformApplication)' == 'true'">
+    <MetricsOpenCoverDirectory>$(MSBuildThisFileDirectory)Metrics/OpenCover</MetricsOpenCoverDirectory>
+    <MetricsCoverageProjectDirectory>$(MetricsOpenCoverDirectory)/$(MSBuildProjectName)</MetricsCoverageProjectDirectory>
+    <MetricsCoverageOutput>$(MetricsCoverageProjectDirectory)/coverage.opencover.xml</MetricsCoverageOutput>
+    <MetricsReportGeneratorDirectory>$(MSBuildThisFileDirectory)Metrics/ReportGenerator</MetricsReportGeneratorDirectory>
+    <!-- Exclude compiler-generated interceptor types that appear across multiple
+         test coverage files and cause duplicate-type errors in metricsreporter. -->
+    <CoverletExcludeArguments>--coverlet-exclude "[*]System.Runtime.CompilerServices.*" --coverlet-exclude "[*]Microsoft.AspNetCore.OpenApi.Generated.*"</CoverletExcludeArguments>
+        <!-- Exclude source files that produce duplicate short type names across
+          projects; metricsreporter keys OpenCover types by short name only. -->
+        <CoverletExcludeArguments>$(CoverletExcludeArguments) --coverlet-exclude-by-file "**/Program.cs" --coverlet-exclude-by-file "**/Extensions.cs" --coverlet-exclude-by-file "**/Shared/*.cs"</CoverletExcludeArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <MetricsCoverageProjects Include="$(MSBuildThisFileDirectory)tests/Basket.UnitTests/Basket.UnitTests.csproj" />
+    <MetricsCoverageProjects Include="$(MSBuildThisFileDirectory)tests/Ordering.UnitTests/Ordering.UnitTests.csproj" />
+    <MetricsCoverageProjects Include="$(MSBuildThisFileDirectory)tests/Catalog.FunctionalTests/Catalog.FunctionalTests.csproj" />
+    <MetricsCoverageProjects Include="$(MSBuildThisFileDirectory)tests/ClientApp.UnitTests/ClientApp.UnitTests.csproj" />
+    <MetricsCoverageProjects Include="$(MSBuildThisFileDirectory)tests/Ordering.FunctionalTests/Ordering.FunctionalTests.csproj" />
+  </ItemGroup>
+
+  <!-- OpenCover xml:
+       Per-project Include filters ensure each test's coverage XML contains only
+       assemblies specific to that project.  Without these, shared assemblies
+       (EventBus, eShop.ServiceDefaults, etc.) appear in multiple XML files and
+       metricsreporter rejects the aggregated result as having duplicate types. -->
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Basket.UnitTests'">
+    <CoverletIncludeArguments>--coverlet-include "[Basket.API]*"</CoverletIncludeArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Ordering.UnitTests'">
+    <CoverletIncludeArguments>--coverlet-include "[Ordering.Domain]*" --coverlet-include "[Ordering.Infrastructure]*" --coverlet-include "[IntegrationEventLogEF]*"</CoverletIncludeArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Catalog.FunctionalTests'">
+    <CoverletIncludeArguments>--coverlet-include "[Catalog.API]*"</CoverletIncludeArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'ClientApp.UnitTests'">
+    <CoverletIncludeArguments>--coverlet-include "[ClientApp]*"</CoverletIncludeArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Ordering.FunctionalTests'">
+    <CoverletIncludeArguments>--coverlet-include "[Ordering.API]*"</CoverletIncludeArguments>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(IsTestingPlatformApplication)' == 'true'">
+    <!-- OpenCover xml:
+    This target only forwards coverlet options to the test host; the project still needs
+    a coverlet.MTP reference so the MTP runner can load the coverage integration. -->
+    <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --coverlet --coverlet-output-format opencover --results-directory &quot;$(MetricsCoverageProjectDirectory)&quot; $(CoverletIncludeArguments) $(CoverletExcludeArguments)</TestingPlatformCommandLineArguments>
+  </PropertyGroup>
+
+  <!-- Create the OpenCover and ReportGenerator output directories before Build so coverlet.MTP has a guaranteed
+  location for each test project's coverage file. -->
+  <Target Name="CreateMetricsOpenCoverDirectory"
+          BeforeTargets="Build"
+          Condition="'$(IsTestingPlatformApplication)' == 'true'">
+    <MakeDir Directories="$(MetricsOpenCoverDirectory)" />
+    <MakeDir Directories="$(MetricsCoverageProjectDirectory)" />
+    <MakeDir Directories="$(MetricsReportGeneratorDirectory)" />
+  </Target>
+
+    <!-- Run all coverage-enabled test projects, then optionally build the aggregated HTML report from the XML files they produced. -->
+    <Target Name="CollectMetricsCoverage">
+      <MSBuild Projects="@(MetricsCoverageProjects)"
+       Targets="Test"
+       BuildInParallel="false" />
+
+      <CallTarget Targets="GenerateMetricsHtmlReport"
+          Condition="'$(GenerateMetricsHtmlReportEnabled)' == 'true'" />
+    </Target>
+
+    <Target Name="GenerateMetricsHtmlReport"
+        Condition="'$(GenerateMetricsHtmlReportEnabled)' == 'true' and Exists('$(MSBuildThisFileDirectory).config/dotnet-tools.json')">
+      <Exec WorkingDirectory="$(MSBuildThisFileDirectory)"
+        Command="dotnet tool restore" />
+      <Exec WorkingDirectory="$(MSBuildThisFileDirectory)"
+        Command="dotnet tool run reportgenerator -- -reports:&quot;$(MetricsOpenCoverDirectory)/**/coverage.opencover.xml&quot; -targetdir:&quot;$(MetricsReportGeneratorDirectory)&quot; -reporttypes:&quot;Html&quot;" />
+  </Target>
 </Project>

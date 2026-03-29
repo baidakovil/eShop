@@ -8,6 +8,16 @@
   <!-- xUnit settings -->
   <PropertyGroup>
     <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
   </PropertyGroup>
+
+  <!-- coverlet.MTP: collect OpenCover-format coverage for all test projects
+       that participate in central package management (excludes ClientApp.UnitTests
+       which sets ManagePackageVersionsCentrally=false due to MAUI constraints). -->
+  <ItemGroup Condition="'$(ManagePackageVersionsCentrally)' != 'false'">
+    <PackageReference Include="coverlet.MTP">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>
