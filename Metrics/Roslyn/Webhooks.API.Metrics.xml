@@ -1,0 +1,1226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="Webhooks.API.csproj">
+      <Assembly Name="Webhooks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="89" />
+          <Metric Name="CyclomaticComplexity" Value="80" />
+          <Metric Name="ClassCoupling" Value="127" />
+          <Metric Name="DepthOfInheritance" Value="2" />
+          <Metric Name="SourceLines" Value="593" />
+          <Metric Name="ExecutableLines" Value="164" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="&lt;global namespace&gt;">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="74" />
+              <Metric Name="CyclomaticComplexity" Value="7" />
+              <Metric Name="ClassCoupling" Value="25" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="65" />
+              <Metric Name="ExecutableLines" Value="37" />
+            </Metrics>
+            <Types>
+              <NamedType Name="ActivityExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="70" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="16" />
+                  <Metric Name="ExecutableLines" Value="5" />
+                </Metrics>
+                <Members>
+                  <Method Name="void ActivityExtensions.SetExceptionTags(Activity activity, Exception ex)" File="/workspaces/eShop/src/Shared/ActivityExtensions.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="13" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Extensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="73" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="6" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="25" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Extensions.AddApplicationServices(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/Webhooks.API/Extensions/Extensions.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="15" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Extensions.AddEventBusSubscriptions(IEventBusBuilder eventBus)" File="/workspaces/eShop/src/Webhooks.API/Extensions/Extensions.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IDbSeeder&lt;TContext&gt;">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="4" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task IDbSeeder&lt;TContext&gt;.SeedAsync(TContext context)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="92">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Program">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="52" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="15" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="20" />
+                  <Metric Name="ExecutableLines" Value="22" />
+                </Metrics>
+                <Members>
+                  <Method Name="&lt;top-level-statements-entry-point&gt;" File="/workspaces/eShop/src/Webhooks.API/Program.cs" Line="1">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="61" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="15" />
+                      <Metric Name="SourceLines" Value="20" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Microsoft.AspNetCore.Hosting">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="87" />
+              <Metric Name="CyclomaticComplexity" Value="10" />
+              <Metric Name="ClassCoupling" Value="33" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="0" />
+              <Metric Name="ExecutableLines" Value="30" />
+            </Metrics>
+            <Types>
+              <NamedType Name="MigrateDbContextExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="74" />
+                  <Metric Name="CyclomaticComplexity" Value="9" />
+                  <Metric Name="ClassCoupling" Value="33" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="85" />
+                  <Metric Name="ExecutableLines" Value="30" />
+                </Metrics>
+                <Members>
+                  <Field Name="string MigrateDbContextExtensions.ActivitySourceName" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="ActivitySource MigrateDbContextExtensions.ActivitySource" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="89" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="IServiceCollection MigrateDbContextExtensions.AddMigration&lt;TContext&gt;(IServiceCollection services)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IServiceCollection MigrateDbContextExtensions.AddMigration&lt;TContext&gt;(IServiceCollection services, Func&lt;TContext, IServiceProvider, Task&gt; seeder)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="75" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IServiceCollection MigrateDbContextExtensions.AddMigration&lt;TContext, TDbSeeder&gt;(IServiceCollection services)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="23">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="79" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task MigrateDbContextExtensions.MigrateDbContextAsync&lt;TContext&gt;(IServiceProvider services, Func&lt;TContext, IServiceProvider, Task&gt; seeder)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="31">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="18" />
+                      <Metric Name="SourceLines" Value="26" />
+                      <Metric Name="ExecutableLines" Value="12" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task MigrateDbContextExtensions.InvokeSeeder&lt;TContext&gt;(Func&lt;TContext, IServiceProvider, Task&gt; seeder, TContext context, IServiceProvider services)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="58">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="12" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Field Name="BackgroundService MigrateDbContextExtensions.where" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="77">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="Task MigrateDbContextExtensions.StartAsync(CancellationToken cancellationToken)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="79">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task MigrateDbContextExtensions.ExecuteAsync(CancellationToken stoppingToken)" File="/workspaces/eShop/src/Shared/MigrateDbContextExtensions.cs" Line="84">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="MigrateDbContextExtensions.MigrationHostedService&lt;TContext&gt;">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="45" />
+              <Metric Name="CyclomaticComplexity" Value="7" />
+              <Metric Name="ClassCoupling" Value="28" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="82" />
+              <Metric Name="ExecutableLines" Value="31" />
+            </Metrics>
+            <Types>
+              <NamedType Name="WebHooksApi">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="45" />
+                  <Metric Name="CyclomaticComplexity" Value="7" />
+                  <Metric Name="ClassCoupling" Value="28" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="80" />
+                  <Metric Name="ExecutableLines" Value="31" />
+                </Metrics>
+                <Members>
+                  <Method Name="RouteGroupBuilder WebHooksApi.MapWebHooksApiV1(IEndpointRouteBuilder app)" File="/workspaces/eShop/src/Webhooks.API/Apis/WebHooksApi.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="45" />
+                      <Metric Name="CyclomaticComplexity" Value="7" />
+                      <Metric Name="ClassCoupling" Value="28" />
+                      <Metric Name="SourceLines" Value="77" />
+                      <Metric Name="ExecutableLines" Value="31" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API.Exceptions">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="1" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="5" />
+              <Metric Name="ExecutableLines" Value="0" />
+            </Metrics>
+            <Types>
+              <NamedType Name="WebhooksDomainException">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="3" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API.Extensions">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="64" />
+              <Metric Name="CyclomaticComplexity" Value="8" />
+              <Metric Name="ClassCoupling" Value="21" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="49" />
+              <Metric Name="ExecutableLines" Value="16" />
+            </Metrics>
+            <Types>
+              <NamedType Name="RouteHandlerBuilderExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="64" />
+                  <Metric Name="CyclomaticComplexity" Value="8" />
+                  <Metric Name="ClassCoupling" Value="21" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="47" />
+                  <Metric Name="ExecutableLines" Value="16" />
+                </Metrics>
+                <Members>
+                  <Method Name="RouteHandlerBuilder RouteHandlerBuilderExtensions.ValidateWebhookSubscriptionRequest(RouteHandlerBuilder routeHandlerBuilder)" File="/workspaces/eShop/src/Webhooks.API/Extensions/RouteHandlerBuilderExtensions.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="18" />
+                      <Metric Name="SourceLines" Value="21" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Dictionary&lt;string, string[]&gt; RouteHandlerBuilderExtensions.ToErrors(IEnumerable&lt;ValidationResult&gt; validationResults)" File="/workspaces/eShop/src/Webhooks.API/Extensions/RouteHandlerBuilderExtensions.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="22" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API.Infrastructure">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="0" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="20" />
+              <Metric Name="ExecutableLines" Value="0" />
+            </Metrics>
+            <Types>
+              <NamedType Name="WebhooksContext">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API.IntegrationEvents">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="7" />
+              <Metric Name="ClassCoupling" Value="7" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="57" />
+              <Metric Name="ExecutableLines" Value="1" />
+            </Metrics>
+            <Types>
+              <NamedType Name="OrderStatusChangedToPaidIntegrationEvent">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="OrderStatusChangedToPaidIntegrationEvent.OrderStatusChangedToPaidIntegrationEvent(int OrderId, IEnumerable&lt;OrderStockItem&gt; OrderStockItems)" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStatusChangedToPaidIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="int OrderStatusChangedToPaidIntegrationEvent.OrderId" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStatusChangedToPaidIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                  <Property Name="IEnumerable&lt;OrderStockItem&gt; OrderStatusChangedToPaidIntegrationEvent.OrderStockItems" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStatusChangedToPaidIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderStatusChangedToPaidIntegrationEventHandler">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="OrderStatusChangedToShippedIntegrationEvent">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="OrderStatusChangedToShippedIntegrationEvent.OrderStatusChangedToShippedIntegrationEvent(int OrderId, string OrderStatus, string BuyerName)" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStatusChangedToShippedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="int OrderStatusChangedToShippedIntegrationEvent.OrderId" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStatusChangedToShippedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                  <Property Name="string OrderStatusChangedToShippedIntegrationEvent.OrderStatus" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStatusChangedToShippedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                  <Property Name="string OrderStatusChangedToShippedIntegrationEvent.BuyerName" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStatusChangedToShippedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderStatusChangedToShippedIntegrationEventHandler">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="OrderStockItem">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="OrderStockItem.OrderStockItem(int ProductId, int Units)" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStockItem.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="int OrderStockItem.ProductId" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStockItem.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                  <Property Name="int OrderStockItem.Units" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/OrderStockItem.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="ProductPriceChangedIntegrationEvent">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="ProductPriceChangedIntegrationEvent.ProductPriceChangedIntegrationEvent(int ProductId, decimal NewPrice, decimal OldPrice)" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/ProductPriceChangedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="int ProductPriceChangedIntegrationEvent.ProductId" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/ProductPriceChangedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                  <Property Name="decimal ProductPriceChangedIntegrationEvent.NewPrice" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/ProductPriceChangedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                  <Property Name="decimal ProductPriceChangedIntegrationEvent.OldPrice" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/ProductPriceChangedIntegrationEvent.cs" Line="3">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="ProductPriceChangedIntegrationEventHandler">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="1" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task ProductPriceChangedIntegrationEventHandler.Handle(ProductPriceChangedIntegrationEvent @event)" File="/workspaces/eShop/src/Webhooks.API/IntegrationEvents/ProductPriceChangedIntegrationEventHandler.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API.Migrations">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="60" />
+              <Metric Name="CyclomaticComplexity" Value="4" />
+              <Metric Name="ClassCoupling" Value="27" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="138" />
+              <Metric Name="ExecutableLines" Value="37" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Initial">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="64" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="25" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="75" />
+                  <Metric Name="ExecutableLines" Value="21" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Initial.Up(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Webhooks.API/Migrations/20230925222606_Initial.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="20" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Initial.Down(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Webhooks.API/Migrations/20230925222606_Initial.cs" Line="34">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Initial.BuildTargetModel(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Webhooks.API/Migrations/20230925222606_Initial.Designer.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="58" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="39" />
+                      <Metric Name="ExecutableLines" Value="12" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="WebhooksContextModelSnapshot">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="55" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="14" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="48" />
+                  <Metric Name="ExecutableLines" Value="16" />
+                </Metrics>
+                <Members>
+                  <Method Name="void WebhooksContextModelSnapshot.BuildModel(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Webhooks.API/Migrations/WebhooksContextModelSnapshot.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="56" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="44" />
+                      <Metric Name="ExecutableLines" Value="14" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API.Model">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="92" />
+              <Metric Name="CyclomaticComplexity" Value="29" />
+              <Metric Name="ClassCoupling" Value="12" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="68" />
+              <Metric Name="ExecutableLines" Value="12" />
+            </Metrics>
+            <Types>
+              <NamedType Name="WebhookData">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="92" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="15" />
+                  <Metric Name="ExecutableLines" Value="3" />
+                </Metrics>
+                <Members>
+                  <Property Name="DateTime WebhookData.When" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookData.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DateTime WebhookData.When.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookData.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookData.Payload" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookData.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookData.Payload.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookData.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookData.Type" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookData.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookData.Type.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookData.cs" Line="9">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="WebhookData.WebhookData(WebhookType hookType, object data)" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookData.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="78" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="WebhookSubscription">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="12" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="12" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Property Name="int WebhookSubscription.Id" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int WebhookSubscription.Id.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscription.Id.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="WebhookType WebhookSubscription.Type" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="WebhookType WebhookSubscription.Type.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscription.Type.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DateTime WebhookSubscription.Date" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DateTime WebhookSubscription.Date.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscription.Date.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookSubscription.DestUrl" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookSubscription.DestUrl.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscription.DestUrl.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookSubscription.Token" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookSubscription.Token.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="11">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscription.Token.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="11">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookSubscription.UserId" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookSubscription.UserId.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="13">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscription.UserId.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscription.cs" Line="13">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="WebhookSubscriptionRequest">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="85" />
+                  <Metric Name="CyclomaticComplexity" Value="12" />
+                  <Metric Name="ClassCoupling" Value="8" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="27" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Property Name="string WebhookSubscriptionRequest.Url" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookSubscriptionRequest.Url.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscriptionRequest.Url.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookSubscriptionRequest.Token" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookSubscriptionRequest.Token.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="6">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscriptionRequest.Token.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="6">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookSubscriptionRequest.Event" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookSubscriptionRequest.Event.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscriptionRequest.Event.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string WebhookSubscriptionRequest.GrantUrl" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookSubscriptionRequest.GrantUrl.get" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void WebhookSubscriptionRequest.GrantUrl.set" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="IEnumerable&lt;ValidationResult&gt; WebhookSubscriptionRequest.Validate(ValidationContext validationContext)" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookSubscriptionRequest.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="18" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="WebhookType">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="93" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="2" />
+                </Metrics>
+                <Members>
+                  <Field Name="WebhookType.CatalogItemPriceChange" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookType.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="WebhookType.OrderShipped" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookType.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="WebhookType.OrderPaid" File="/workspaces/eShop/src/Webhooks.API/Model/WebhookType.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Webhooks.API.Services">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="6" />
+              <Metric Name="ClassCoupling" Value="6" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="109" />
+              <Metric Name="ExecutableLines" Value="0" />
+            </Metrics>
+            <Types>
+              <NamedType Name="GrantUrlTesterService">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="IGrantUrlTesterService">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="4" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task&lt;bool&gt; IGrantUrlTesterService.TestGrantUrl(string urlHook, string url, string token)" File="/workspaces/eShop/src/Webhooks.API/Services/IGrantUrlTesterService.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IWebhooksRetriever">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="5" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task&lt;IEnumerable&lt;WebhookSubscription&gt;&gt; IWebhooksRetriever.GetSubscriptionsOfType(WebhookType type)" File="/workspaces/eShop/src/Webhooks.API/Services/IWebhooksRetriever.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IWebhooksSender">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="4" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task IWebhooksSender.SendAll(IEnumerable&lt;WebhookSubscription&gt; receivers, WebhookData data)" File="/workspaces/eShop/src/Webhooks.API/Services/IWebhooksSender.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="WebhooksRetriever">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="WebhooksSender">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

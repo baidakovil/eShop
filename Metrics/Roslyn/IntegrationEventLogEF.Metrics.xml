@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="IntegrationEventLogEF.csproj">
+      <Assembly Name="IntegrationEventLogEF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="85" />
+          <Metric Name="CyclomaticComplexity" Value="49" />
+          <Metric Name="ClassCoupling" Value="46" />
+          <Metric Name="DepthOfInheritance" Value="1" />
+          <Metric Name="SourceLines" Value="185" />
+          <Metric Name="ExecutableLines" Value="56" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="eShop.IntegrationEventLogEF">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="86" />
+              <Metric Name="CyclomaticComplexity" Value="25" />
+              <Metric Name="ClassCoupling" Value="20" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="61" />
+              <Metric Name="ExecutableLines" Value="19" />
+            </Metrics>
+            <Types>
+              <NamedType Name="EventStateEnum">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="93" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="2" />
+                </Metrics>
+                <Members>
+                  <Field Name="EventStateEnum.NotPublished" File="/workspaces/eShop/src/IntegrationEventLogEF/EventStateEnum.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="EventStateEnum.InProgress" File="/workspaces/eShop/src/IntegrationEventLogEF/EventStateEnum.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="EventStateEnum.Published" File="/workspaces/eShop/src/IntegrationEventLogEF/EventStateEnum.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="EventStateEnum.PublishedFailed" File="/workspaces/eShop/src/IntegrationEventLogEF/EventStateEnum.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                </Members>
+              </NamedType>
+              <NamedType Name="IntegrationEventLogEntry">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="89" />
+                  <Metric Name="CyclomaticComplexity" Value="23" />
+                  <Metric Name="ClassCoupling" Value="12" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="36" />
+                  <Metric Name="ExecutableLines" Value="13" />
+                </Metrics>
+                <Members>
+                  <Field Name="JsonSerializerOptions IntegrationEventLogEntry.s_indentedOptions" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="JsonSerializerOptions IntegrationEventLogEntry.s_caseInsensitiveOptions" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="IntegrationEventLogEntry.IntegrationEventLogEntry()" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IntegrationEventLogEntry.IntegrationEventLogEntry(IntegrationEvent @event, Guid transactionId)" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="66" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="Guid IntegrationEventLogEntry.EventId" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="Guid IntegrationEventLogEntry.EventId.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="21">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.EventId.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="21">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string IntegrationEventLogEntry.EventTypeName" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="23">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IntegrationEventLogEntry.EventTypeName.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="23">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.EventTypeName.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="23">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string IntegrationEventLogEntry.EventTypeShortName" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="25">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IntegrationEventLogEntry.EventTypeShortName.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="25">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="2" />
+                          <Metric Name="ClassCoupling" Value="3" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="IntegrationEvent IntegrationEventLogEntry.IntegrationEvent" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="IntegrationEvent IntegrationEventLogEntry.IntegrationEvent.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.IntegrationEvent.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="EventStateEnum IntegrationEventLogEntry.State" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="28">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="EventStateEnum IntegrationEventLogEntry.State.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="28">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.State.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="28">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="int IntegrationEventLogEntry.TimesSent" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="29">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int IntegrationEventLogEntry.TimesSent.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="29">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.TimesSent.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="29">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DateTime IntegrationEventLogEntry.CreationTime" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="30">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DateTime IntegrationEventLogEntry.CreationTime.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="30">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.CreationTime.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="30">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string IntegrationEventLogEntry.Content" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="32">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string IntegrationEventLogEntry.Content.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="32">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.Content.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="32">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="Guid IntegrationEventLogEntry.TransactionId" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="33">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="Guid IntegrationEventLogEntry.TransactionId.get" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="33">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEventLogEntry.TransactionId.set" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="33">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="IntegrationEventLogEntry IntegrationEventLogEntry.DeserializeJsonContent(Type type)" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationEventLogEntry.cs" Line="35">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IntegrationLogExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="76" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="9" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="12" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Method Name="void IntegrationLogExtensions.UseIntegrationEventLogs(ModelBuilder builder)" File="/workspaces/eShop/src/IntegrationEventLogEF/IntegrationLogExtensions.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.IntegrationEventLogEF.Services">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="87" />
+              <Metric Name="CyclomaticComplexity" Value="20" />
+              <Metric Name="ClassCoupling" Value="33" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="101" />
+              <Metric Name="ExecutableLines" Value="30" />
+            </Metrics>
+            <Types>
+              <NamedType Name="IIntegrationEventLogService">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="7" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="8" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task&lt;IEnumerable&lt;IntegrationEventLogEntry&gt;&gt; IIntegrationEventLogService.RetrieveEventLogsPendingToPublishAsync(Guid transactionId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IIntegrationEventLogService.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IIntegrationEventLogService.SaveEventAsync(IntegrationEvent @event, IDbContextTransaction transaction)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IIntegrationEventLogService.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IIntegrationEventLogService.MarkEventAsPublishedAsync(Guid eventId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IIntegrationEventLogService.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IIntegrationEventLogService.MarkEventAsInProgressAsync(Guid eventId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IIntegrationEventLogService.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IIntegrationEventLogService.MarkEventAsFailedAsync(Guid eventId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IIntegrationEventLogService.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IntegrationEventLogService&lt;TContext&gt;">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="74" />
+                  <Metric Name="CyclomaticComplexity" Value="15" />
+                  <Metric Name="ClassCoupling" Value="33" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="89" />
+                  <Metric Name="ExecutableLines" Value="30" />
+                </Metrics>
+                <Members>
+                  <Field Name="bool IntegrationEventLogService&lt;TContext&gt;._disposedValue" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="TContext IntegrationEventLogService&lt;TContext&gt;._context" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Type[] IntegrationEventLogService&lt;TContext&gt;._eventTypes" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="IntegrationEventLogService&lt;TContext&gt;.IntegrationEventLogService(TContext context)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;IEnumerable&lt;IntegrationEventLogEntry&gt;&gt; IntegrationEventLogService&lt;TContext&gt;.RetrieveEventLogsPendingToPublishAsync(Guid transactionId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="63" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="18" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IntegrationEventLogService&lt;TContext&gt;.SaveEventAsync(IntegrationEvent @event, IDbContextTransaction transaction)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="34">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="15" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IntegrationEventLogService&lt;TContext&gt;.MarkEventAsPublishedAsync(Guid eventId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="46">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IntegrationEventLogService&lt;TContext&gt;.MarkEventAsInProgressAsync(Guid eventId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="51">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IntegrationEventLogService&lt;TContext&gt;.MarkEventAsFailedAsync(Guid eventId)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="56">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IntegrationEventLogService&lt;TContext&gt;.UpdateEventStatus(Guid eventId, EventStateEnum status)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="61">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IntegrationEventLogService&lt;TContext&gt;.Dispose(bool disposing)" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="72">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="13" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void IntegrationEventLogService&lt;TContext&gt;.Dispose()" File="/workspaces/eShop/src/IntegrationEventLogEF/Services/IntegrationEventLogService.cs" Line="86">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.IntegrationEventLogEF.Utilities">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="80" />
+              <Metric Name="CyclomaticComplexity" Value="4" />
+              <Metric Name="ClassCoupling" Value="11" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="23" />
+              <Metric Name="ExecutableLines" Value="7" />
+            </Metrics>
+            <Types>
+              <NamedType Name="ResilientTransaction">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="80" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="11" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="21" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Field Name="DbContext ResilientTransaction._context" File="/workspaces/eShop/src/IntegrationEventLogEF/Utilities/ResilientTransaction.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="ResilientTransaction.ResilientTransaction(DbContext context)" File="/workspaces/eShop/src/IntegrationEventLogEF/Utilities/ResilientTransaction.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="ResilientTransaction ResilientTransaction.New(DbContext context)" File="/workspaces/eShop/src/IntegrationEventLogEF/Utilities/ResilientTransaction.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task ResilientTransaction.ExecuteAsync(Func&lt;Task&gt; action)" File="/workspaces/eShop/src/IntegrationEventLogEF/Utilities/ResilientTransaction.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

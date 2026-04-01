@@ -1,0 +1,1010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="Ordering.Infrastructure.csproj">
+      <Assembly Name="Ordering.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="66" />
+          <Metric Name="CyclomaticComplexity" Value="79" />
+          <Metric Name="ClassCoupling" Value="114" />
+          <Metric Name="DepthOfInheritance" Value="2" />
+          <Metric Name="SourceLines" Value="2565" />
+          <Metric Name="ExecutableLines" Value="729" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="eShop.Ordering.Infrastructure">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="72" />
+              <Metric Name="CyclomaticComplexity" Value="30" />
+              <Metric Name="ClassCoupling" Value="46" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="132" />
+              <Metric Name="ExecutableLines" Value="41" />
+            </Metrics>
+            <Types>
+              <NamedType Name="MediatorExtension">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="65" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="14" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="19" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task MediatorExtension.DispatchDomainEventsAsync(IMediator mediator, OrderingContext ctx)" File="/workspaces/eShop/src/Ordering.Infrastructure/MediatorExtension.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="14" />
+                      <Metric Name="SourceLines" Value="16" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderingContext">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="79" />
+                  <Metric Name="CyclomaticComplexity" Value="27" />
+                  <Metric Name="ClassCoupling" Value="35" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="109" />
+                  <Metric Name="ExecutableLines" Value="34" />
+                </Metrics>
+                <Members>
+                  <Property Name="DbSet&lt;Order&gt; OrderingContext.Orders" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DbSet&lt;Order&gt; OrderingContext.Orders.get" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="12">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void OrderingContext.Orders.set" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="12">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DbSet&lt;OrderItem&gt; OrderingContext.OrderItems" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DbSet&lt;OrderItem&gt; OrderingContext.OrderItems.get" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="13">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void OrderingContext.OrderItems.set" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="13">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DbSet&lt;PaymentMethod&gt; OrderingContext.Payments" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DbSet&lt;PaymentMethod&gt; OrderingContext.Payments.get" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="14">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void OrderingContext.Payments.set" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="14">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DbSet&lt;Buyer&gt; OrderingContext.Buyers" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DbSet&lt;Buyer&gt; OrderingContext.Buyers.get" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="15">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void OrderingContext.Buyers.set" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="15">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DbSet&lt;CardType&gt; OrderingContext.CardTypes" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DbSet&lt;CardType&gt; OrderingContext.CardTypes.get" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="16">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void OrderingContext.CardTypes.set" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="16">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Field Name="IMediator OrderingContext._mediator" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="IDbContextTransaction OrderingContext._currentTransaction" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="OrderingContext.OrderingContext(DbContextOptions&lt;OrderingContext&gt; options)" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IDbContextTransaction OrderingContext.GetCurrentTransaction()" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="23">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="bool OrderingContext.HasActiveTransaction" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="25">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool OrderingContext.HasActiveTransaction.get" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="25">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="94" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="OrderingContext.OrderingContext(DbContextOptions&lt;OrderingContext&gt; options, IMediator mediator)" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void OrderingContext.OnModelCreating(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="35">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="16" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;bool&gt; OrderingContext.SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="47">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="75" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="16" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;IDbContextTransaction&gt; OrderingContext.BeginTransactionAsync()" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="64">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="78" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task OrderingContext.CommitTransactionAsync(IDbContextTransaction transaction)" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="73">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="8" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void OrderingContext.RollbackTransaction()" File="/workspaces/eShop/src/Ordering.Infrastructure/OrderingContext.cs" Line="98">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="75" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="15" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Ordering.Infrastructure.EntityConfigurations">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="68" />
+              <Metric Name="CyclomaticComplexity" Value="6" />
+              <Metric Name="ClassCoupling" Value="28" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="150" />
+              <Metric Name="ExecutableLines" Value="51" />
+            </Metrics>
+            <Types>
+              <NamedType Name="BuyerEntityTypeConfiguration">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="62" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="15" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="22" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Method Name="void BuyerEntityTypeConfiguration.Configure(EntityTypeBuilder&lt;Buyer&gt; buyerConfiguration)" File="/workspaces/eShop/src/Ordering.Infrastructure/EntityConfigurations/BuyerEntityTypeConfiguration.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="14" />
+                      <Metric Name="SourceLines" Value="18" />
+                      <Metric Name="ExecutableLines" Value="10" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="CardTypeEntityTypeConfiguration">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="73" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="8" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="15" />
+                  <Metric Name="ExecutableLines" Value="5" />
+                </Metrics>
+                <Members>
+                  <Method Name="void CardTypeEntityTypeConfiguration.Configure(EntityTypeBuilder&lt;CardType&gt; cardTypesConfiguration)" File="/workspaces/eShop/src/Ordering.Infrastructure/EntityConfigurations/CardTypeEntityTypeConfiguration.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="ClientRequestEntityTypeConfiguration">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="94" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="8" />
+                  <Metric Name="ExecutableLines" Value="1" />
+                </Metrics>
+                <Members>
+                  <Method Name="void ClientRequestEntityTypeConfiguration.Configure(EntityTypeBuilder&lt;ClientRequest&gt; requestConfiguration)" File="/workspaces/eShop/src/Ordering.Infrastructure/EntityConfigurations/ClientRequestEntityTypeConfiguration.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="94" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderEntityTypeConfiguration">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="56" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="20" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="34" />
+                  <Metric Name="ExecutableLines" Value="16" />
+                </Metrics>
+                <Members>
+                  <Method Name="void OrderEntityTypeConfiguration.Configure(EntityTypeBuilder&lt;Order&gt; orderConfiguration)" File="/workspaces/eShop/src/Ordering.Infrastructure/EntityConfigurations/OrderEntityTypeConfiguration.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="56" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="19" />
+                      <Metric Name="SourceLines" Value="31" />
+                      <Metric Name="ExecutableLines" Value="16" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderItemEntityTypeConfiguration">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="69" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="10" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="15" />
+                  <Metric Name="ExecutableLines" Value="6" />
+                </Metrics>
+                <Members>
+                  <Method Name="void OrderItemEntityTypeConfiguration.Configure(EntityTypeBuilder&lt;OrderItem&gt; orderItemConfiguration)" File="/workspaces/eShop/src/Ordering.Infrastructure/EntityConfigurations/OrderItemEntityTypeConfiguration.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="PaymentMethodEntityTypeConfiguration">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="57" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="15" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="44" />
+                  <Metric Name="ExecutableLines" Value="13" />
+                </Metrics>
+                <Members>
+                  <Method Name="void PaymentMethodEntityTypeConfiguration.Configure(EntityTypeBuilder&lt;PaymentMethod&gt; paymentConfiguration)" File="/workspaces/eShop/src/Ordering.Infrastructure/EntityConfigurations/PaymentMethodEntityTypeConfiguration.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="57" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="14" />
+                      <Metric Name="SourceLines" Value="40" />
+                      <Metric Name="ExecutableLines" Value="13" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Ordering.Infrastructure.Idempotency">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="93" />
+              <Metric Name="CyclomaticComplexity" Value="13" />
+              <Metric Name="ClassCoupling" Value="15" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="55" />
+              <Metric Name="ExecutableLines" Value="7" />
+            </Metrics>
+            <Types>
+              <NamedType Name="ClientRequest">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="6" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Property Name="Guid ClientRequest.Id" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="Guid ClientRequest.Id.get" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void ClientRequest.Id.set" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string ClientRequest.Name" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string ClientRequest.Name.get" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="9">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void ClientRequest.Name.set" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="9">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DateTime ClientRequest.Time" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DateTime ClientRequest.Time.get" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void ClientRequest.Time.set" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/ClientRequest.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="IRequestManager">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task&lt;bool&gt; IRequestManager.ExistAsync(Guid id)" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/IRequestManager.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IRequestManager.CreateRequestForCommandAsync&lt;T&gt;(Guid id)" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/IRequestManager.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="RequestManager">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="78" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="14" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="36" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Field Name="OrderingContext RequestManager._context" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/RequestManager.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="RequestManager.RequestManager(OrderingContext context)" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/RequestManager.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;bool&gt; RequestManager.ExistAsync(Guid id)" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/RequestManager.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task RequestManager.CreateRequestForCommandAsync&lt;T&gt;(Guid id)" File="/workspaces/eShop/src/Ordering.Infrastructure/Idempotency/RequestManager.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Ordering.Infrastructure.Repositories">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="80" />
+              <Metric Name="CyclomaticComplexity" Value="17" />
+              <Metric Name="ClassCoupling" Value="27" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="90" />
+              <Metric Name="ExecutableLines" Value="25" />
+            </Metrics>
+            <Types>
+              <NamedType Name="BuyerRepository">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="78" />
+                  <Metric Name="CyclomaticComplexity" Value="9" />
+                  <Metric Name="ClassCoupling" Value="18" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="50" />
+                  <Metric Name="ExecutableLines" Value="15" />
+                </Metrics>
+                <Members>
+                  <Field Name="OrderingContext BuyerRepository._context" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="IUnitOfWork BuyerRepository.UnitOfWork" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="IUnitOfWork BuyerRepository.UnitOfWork.get" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="BuyerRepository.BuyerRepository(OrderingContext context)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Buyer BuyerRepository.Add(Buyer buyer)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="78" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Buyer BuyerRepository.Update(Buyer buyer)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="26">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;Buyer&gt; BuyerRepository.FindAsync(string identity)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="33">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="13" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;Buyer&gt; BuyerRepository.FindByIdAsync(int id)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/BuyerRepository.cs" Line="43">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="13" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderRepository">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="81" />
+                  <Metric Name="CyclomaticComplexity" Value="8" />
+                  <Metric Name="ClassCoupling" Value="20" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="36" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Field Name="OrderingContext OrderRepository._context" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/OrderRepository.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="IUnitOfWork OrderRepository.UnitOfWork" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/OrderRepository.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="IUnitOfWork OrderRepository.UnitOfWork.get" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/OrderRepository.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="OrderRepository.OrderRepository(OrderingContext context)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/OrderRepository.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Order OrderRepository.Add(Order order)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/OrderRepository.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;Order&gt; OrderRepository.GetAsync(int orderId)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/OrderRepository.cs" Line="21">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="15" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void OrderRepository.Update(Order order)" File="/workspaces/eShop/src/Ordering.Infrastructure/Repositories/OrderRepository.cs" Line="34">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Ordering.Infrastructure.Migrations">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="39" />
+              <Metric Name="CyclomaticComplexity" Value="13" />
+              <Metric Name="ClassCoupling" Value="52" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="2138" />
+              <Metric Name="ExecutableLines" Value="605" />
+            </Metrics>
+            <Types>
+              <NamedType Name="FixOrderitemseqSchema">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="43" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="31" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="376" />
+                  <Metric Name="ExecutableLines" Value="105" />
+                </Metrics>
+                <Members>
+                  <Method Name="void FixOrderitemseqSchema.Up(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20231021004633_FixOrderitemseqSchema.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="28" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void FixOrderitemseqSchema.Down(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20231021004633_FixOrderitemseqSchema.cs" Line="40">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="28" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void FixOrderitemseqSchema.BuildTargetModel(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20231021004633_FixOrderitemseqSchema.Designer.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="31" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="22" />
+                      <Metric Name="SourceLines" Value="310" />
+                      <Metric Name="ExecutableLines" Value="95" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Initial">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="37" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="41" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="591" />
+                  <Metric Name="ExecutableLines" Value="163" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Initial.Up(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20230925222426_Initial.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="37" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="15" />
+                      <Metric Name="SourceLines" Value="222" />
+                      <Metric Name="ExecutableLines" Value="52" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Initial.Down(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20230925222426_Initial.cs" Line="235">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="61" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="46" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Initial.BuildTargetModel(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20230925222426_Initial.Designer.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="31" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="22" />
+                      <Metric Name="SourceLines" Value="313" />
+                      <Metric Name="ExecutableLines" Value="96" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderingContextModelSnapshot">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="30" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="25" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="320" />
+                  <Metric Name="ExecutableLines" Value="99" />
+                </Metrics>
+                <Members>
+                  <Method Name="void OrderingContextModelSnapshot.BuildModel(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/OrderingContextModelSnapshot.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="31" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="22" />
+                      <Metric Name="SourceLines" Value="316" />
+                      <Metric Name="ExecutableLines" Value="97" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Outbox">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="42" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="35" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="379" />
+                  <Metric Name="ExecutableLines" Value="114" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Outbox.Up(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20231026091055_Outbox.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="21" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Outbox.Down(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20231026091055_Outbox.cs" Line="34">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Outbox.BuildTargetModel(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20231026091055_Outbox.Designer.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="30" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="22" />
+                      <Metric Name="SourceLines" Value="341" />
+                      <Metric Name="ExecutableLines" Value="105" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="UseEnumForOrderStatus">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="41" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="45" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="427" />
+                  <Metric Name="ExecutableLines" Value="124" />
+                </Metrics>
+                <Members>
+                  <Method Name="void UseEnumForOrderStatus.Up(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20240106121712_UseEnumForOrderStatus.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="39" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UseEnumForOrderStatus.Down(MigrationBuilder migrationBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20240106121712_UseEnumForOrderStatus.cs" Line="51">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="55" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="18" />
+                      <Metric Name="SourceLines" Value="61" />
+                      <Metric Name="ExecutableLines" Value="15" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UseEnumForOrderStatus.BuildTargetModel(ModelBuilder modelBuilder)" File="/workspaces/eShop/src/Ordering.Infrastructure/Migrations/20240106121712_UseEnumForOrderStatus.Designer.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="31" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="22" />
+                      <Metric Name="SourceLines" Value="317" />
+                      <Metric Name="ExecutableLines" Value="97" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

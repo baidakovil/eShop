@@ -492,10 +492,3 @@ $RECYCLE.BIN/
 /user.json
 .azure
 
-Metrics/MetricsTemp/**
-Metrics/ReportGenerator/
-Metrics/Sarif/
-Metrics/OpenCover/
-Metrics/Roslyn
-Metrics/MetricsReport.g.json
-Metrics/MetricsReport.html

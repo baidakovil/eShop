@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="EventBusRabbitMQ.csproj">
+      <Assembly Name="EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="88" />
+          <Metric Name="CyclomaticComplexity" Value="13" />
+          <Metric Name="ClassCoupling" Value="32" />
+          <Metric Name="DepthOfInheritance" Value="1" />
+          <Metric Name="SourceLines" Value="353" />
+          <Metric Name="ExecutableLines" Value="22" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="&lt;global namespace&gt;">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="70" />
+              <Metric Name="CyclomaticComplexity" Value="2" />
+              <Metric Name="ClassCoupling" Value="4" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="16" />
+              <Metric Name="ExecutableLines" Value="5" />
+            </Metrics>
+            <Types>
+              <NamedType Name="ActivityExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="70" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="16" />
+                  <Metric Name="ExecutableLines" Value="5" />
+                </Metrics>
+                <Members>
+                  <Method Name="void ActivityExtensions.SetExceptionTags(Activity activity, Exception ex)" File="/workspaces/eShop/src/Shared/ActivityExtensions.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="13" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.EventBusRabbitMQ">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="96" />
+              <Metric Name="CyclomaticComplexity" Value="7" />
+              <Metric Name="ClassCoupling" Value="3" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="337" />
+              <Metric Name="ExecutableLines" Value="4" />
+            </Metrics>
+            <Types>
+              <NamedType Name="EventBusOptions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="5" />
+                  <Metric Name="ExecutableLines" Value="1" />
+                </Metrics>
+                <Members>
+                  <Property Name="string EventBusOptions.SubscriptionClientName" File="/workspaces/eShop/src/EventBusRabbitMQ/EventBusOptions.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string EventBusOptions.SubscriptionClientName.get" File="/workspaces/eShop/src/EventBusRabbitMQ/EventBusOptions.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void EventBusOptions.SubscriptionClientName.set" File="/workspaces/eShop/src/EventBusRabbitMQ/EventBusOptions.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="int EventBusOptions.RetryCount" File="/workspaces/eShop/src/EventBusRabbitMQ/EventBusOptions.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int EventBusOptions.RetryCount.get" File="/workspaces/eShop/src/EventBusRabbitMQ/EventBusOptions.cs" Line="6">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void EventBusOptions.RetryCount.set" File="/workspaces/eShop/src/EventBusRabbitMQ/EventBusOptions.cs" Line="6">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="RabbitMQEventBus">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="RabbitMQTelemetry">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="89" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="3" />
+                </Metrics>
+                <Members>
+                  <Field Name="string RabbitMQTelemetry.ActivitySourceName" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMQTelemetry.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="ActivitySource RabbitMQTelemetry.ActivitySource" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMQTelemetry.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="ActivitySource RabbitMQTelemetry.ActivitySource.get" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMQTelemetry.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="TextMapPropagator RabbitMQTelemetry.Propagator" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMQTelemetry.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="TextMapPropagator RabbitMQTelemetry.Propagator.get" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMQTelemetry.cs" Line="11">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Microsoft.Extensions.Hosting">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="86" />
+              <Metric Name="CyclomaticComplexity" Value="4" />
+              <Metric Name="ClassCoupling" Value="25" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="0" />
+              <Metric Name="ExecutableLines" Value="13" />
+            </Metrics>
+            <Types>
+              <NamedType Name="RabbitMqDependencyInjectionExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="73" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="25" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="41" />
+                  <Metric Name="ExecutableLines" Value="13" />
+                </Metrics>
+                <Members>
+                  <Field Name="string RabbitMqDependencyInjectionExtensions.SectionName" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMqDependencyInjectionExtensions.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="IEventBusBuilder RabbitMqDependencyInjectionExtensions.AddRabbitMqEventBus(IHostApplicationBuilder builder, string connectionName)" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMqDependencyInjectionExtensions.cs" Line="17">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="23" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="10" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="IServiceCollection RabbitMqDependencyInjectionExtensions.Services" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMqDependencyInjectionExtensions.cs" Line="44">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="IServiceCollection RabbitMqDependencyInjectionExtensions.Services.get" File="/workspaces/eShop/src/EventBusRabbitMQ/RabbitMqDependencyInjectionExtensions.cs" Line="44">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="RabbitMqDependencyInjectionExtensions.EventBusBuilder">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

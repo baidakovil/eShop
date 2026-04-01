@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="EventBus.csproj">
+      <Assembly Name="EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="91" />
+          <Metric Name="CyclomaticComplexity" Value="19" />
+          <Metric Name="ClassCoupling" Value="23" />
+          <Metric Name="DepthOfInheritance" Value="1" />
+          <Metric Name="SourceLines" Value="82" />
+          <Metric Name="ExecutableLines" Value="21" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="eShop.EventBus.Abstractions">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="96" />
+              <Metric Name="CyclomaticComplexity" Value="8" />
+              <Metric Name="ClassCoupling" Value="11" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="40" />
+              <Metric Name="ExecutableLines" Value="5" />
+            </Metrics>
+            <Types>
+              <NamedType Name="EventBusSubscriptionInfo">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="87" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="8" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="18" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Property Name="Dictionary&lt;string, Type&gt; EventBusSubscriptionInfo.EventTypes" File="/workspaces/eShop/src/EventBus/Abstractions/EventBusSubscriptionInfo.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="Dictionary&lt;string, Type&gt; EventBusSubscriptionInfo.EventTypes.get" File="/workspaces/eShop/src/EventBus/Abstractions/EventBusSubscriptionInfo.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="JsonSerializerOptions EventBusSubscriptionInfo.JsonSerializerOptions" File="/workspaces/eShop/src/EventBus/Abstractions/EventBusSubscriptionInfo.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="JsonSerializerOptions EventBusSubscriptionInfo.JsonSerializerOptions.get" File="/workspaces/eShop/src/EventBus/Abstractions/EventBusSubscriptionInfo.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Field Name="JsonSerializerOptions EventBusSubscriptionInfo.DefaultSerializerOptions" File="/workspaces/eShop/src/EventBus/Abstractions/EventBusSubscriptionInfo.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="IJsonTypeInfoResolver EventBusSubscriptionInfo.CreateDefaultTypeResolver()" File="/workspaces/eShop/src/EventBus/Abstractions/EventBusSubscriptionInfo.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IEventBus">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="4" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task IEventBus.PublishAsync(IntegrationEvent @event)" File="/workspaces/eShop/src/EventBus/Abstractions/IEventBus.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IIntegrationEventHandler">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="4" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task IIntegrationEventHandler.Handle(IntegrationEvent @event)" File="/workspaces/eShop/src/EventBus/Abstractions/IIntegrationEventHandler.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IIntegrationEventHandler&lt;TIntegrationEvent&gt;">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="98" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="1" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task IIntegrationEventHandler&lt;TIntegrationEvent&gt;.Handle(TIntegrationEvent @event)" File="/workspaces/eShop/src/EventBus/Abstractions/IIntegrationEventHandler.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task IIntegrationEventHandler&lt;TIntegrationEvent&gt;.Handle(IntegrationEvent @event)" File="/workspaces/eShop/src/EventBus/Abstractions/IIntegrationEventHandler.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.EventBus.Events">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="94" />
+              <Metric Name="CyclomaticComplexity" Value="5" />
+              <Metric Name="ClassCoupling" Value="3" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="16" />
+              <Metric Name="ExecutableLines" Value="2" />
+            </Metrics>
+            <Types>
+              <NamedType Name="IntegrationEvent">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="94" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="14" />
+                  <Metric Name="ExecutableLines" Value="2" />
+                </Metrics>
+                <Members>
+                  <Method Name="IntegrationEvent.IntegrationEvent()" File="/workspaces/eShop/src/EventBus/Events/IntegrationEvent.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="84" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="Guid IntegrationEvent.Id" File="/workspaces/eShop/src/EventBus/Events/IntegrationEvent.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="Guid IntegrationEvent.Id.get" File="/workspaces/eShop/src/EventBus/Events/IntegrationEvent.cs" Line="12">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEvent.Id.set" File="/workspaces/eShop/src/EventBus/Events/IntegrationEvent.cs" Line="12">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="DateTime IntegrationEvent.CreationDate" File="/workspaces/eShop/src/EventBus/Events/IntegrationEvent.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="DateTime IntegrationEvent.CreationDate.get" File="/workspaces/eShop/src/EventBus/Events/IntegrationEvent.cs" Line="15">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void IntegrationEvent.CreationDate.set" File="/workspaces/eShop/src/EventBus/Events/IntegrationEvent.cs" Line="15">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.EventBus.Extensions">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="74" />
+              <Metric Name="CyclomaticComplexity" Value="3" />
+              <Metric Name="ClassCoupling" Value="4" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="26" />
+              <Metric Name="ExecutableLines" Value="7" />
+            </Metrics>
+            <Types>
+              <NamedType Name="GenericTypeExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="74" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Method Name="string GenericTypeExtensions.GetGenericTypeName(Type type)" File="/workspaces/eShop/src/EventBus/Extensions/GenericTypeExtensions.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="67" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="16" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string GenericTypeExtensions.GetGenericTypeName(object @object)" File="/workspaces/eShop/src/EventBus/Extensions/GenericTypeExtensions.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Microsoft.Extensions.DependencyInjection">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="88" />
+              <Metric Name="CyclomaticComplexity" Value="3" />
+              <Metric Name="ClassCoupling" Value="9" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="0" />
+              <Metric Name="ExecutableLines" Value="7" />
+            </Metrics>
+            <Types>
+              <NamedType Name="EventBusBuilderExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="9" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="33" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Method Name="IEventBusBuilder EventBusBuilderExtensions.ConfigureJsonOptions(IEventBusBuilder eventBusBuilder, Action&lt;JsonSerializerOptions&gt; configure)" File="/workspaces/eShop/src/EventBus/Extensions/EventBusBuilderExtensions.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="79" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IEventBusBuilder EventBusBuilderExtensions.AddSubscription&lt;T, TH&gt;(IEventBusBuilder eventBusBuilder)" File="/workspaces/eShop/src/EventBus/Extensions/EventBusBuilderExtensions.cs" Line="20">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="8" />
+                      <Metric Name="SourceLines" Value="20" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IEventBusBuilder">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="4" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Property Name="IServiceCollection IEventBusBuilder.Services" File="/workspaces/eShop/src/EventBus/Abstractions/IEventBusBuilder.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="IServiceCollection IEventBusBuilder.Services.get" File="/workspaces/eShop/src/EventBus/Abstractions/IEventBusBuilder.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

@@ -1,0 +1,2349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="Basket.API.csproj">
+      <Assembly Name="Basket.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="85" />
+          <Metric Name="CyclomaticComplexity" Value="231" />
+          <Metric Name="ClassCoupling" Value="96" />
+          <Metric Name="DepthOfInheritance" Value="2" />
+          <Metric Name="SourceLines" Value="1536" />
+          <Metric Name="ExecutableLines" Value="459" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="&lt;global namespace&gt;">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="79" />
+              <Metric Name="CyclomaticComplexity" Value="3" />
+              <Metric Name="ClassCoupling" Value="15" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="20" />
+              <Metric Name="ExecutableLines" Value="20" />
+            </Metrics>
+            <Types>
+              <NamedType Name="BasketSerializationContext">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="Program">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="58" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="11" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="14" />
+                  <Metric Name="ExecutableLines" Value="16" />
+                </Metrics>
+                <Members>
+                  <Method Name="&lt;top-level-statements-entry-point&gt;" File="/workspaces/eShop/src/Basket.API/Program.cs" Line="1">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="66" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Basket.API.Extensions">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="86" />
+              <Metric Name="CyclomaticComplexity" Value="6" />
+              <Metric Name="ClassCoupling" Value="23" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="32" />
+              <Metric Name="ExecutableLines" Value="10" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Extensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="73" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="13" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="15" />
+                  <Metric Name="ExecutableLines" Value="5" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Extensions.AddApplicationServices(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/Basket.API/Extensions/Extensions.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="13" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="IntegrationEventContext">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="5" />
+                  <Metric Name="ExecutableLines" Value="2" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="ServerCallContextIdentityExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="84" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="7" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="5" />
+                  <Metric Name="ExecutableLines" Value="3" />
+                </Metrics>
+                <Members>
+                  <Method Name="string? ServerCallContextIdentityExtensions.GetUserIdentity(ServerCallContext context)" File="/workspaces/eShop/src/Basket.API/Extensions/ServerCallContextIdentityExtensions.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string? ServerCallContextIdentityExtensions.GetUserName(ServerCallContext context)" File="/workspaces/eShop/src/Basket.API/Extensions/ServerCallContextIdentityExtensions.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Basket.API.Grpc">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="79" />
+              <Metric Name="CyclomaticComplexity" Value="194" />
+              <Metric Name="ClassCoupling" Value="58" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="1372" />
+              <Metric Name="ExecutableLines" Value="423" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Basket">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="74" />
+                  <Metric Name="CyclomaticComplexity" Value="10" />
+                  <Metric Name="ClassCoupling" Value="28" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="126" />
+                  <Metric Name="ExecutableLines" Value="34" />
+                </Metrics>
+                <Members>
+                  <Field Name="string Basket.__ServiceName" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="void Basket.__Helper_SerializeMessage(IMessage message, SerializationContext context)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="T Basket.__Helper_DeserializeMessage&lt;T&gt;(DeserializationContext context, MessageParser&lt;T&gt; parser)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="37">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Field Name="Marshaller&lt;GetBasketRequest&gt; Basket.__Marshaller_BasketApi_GetBasketRequest" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="49">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Marshaller&lt;CustomerBasketResponse&gt; Basket.__Marshaller_BasketApi_CustomerBasketResponse" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="51">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Marshaller&lt;UpdateBasketRequest&gt; Basket.__Marshaller_BasketApi_UpdateBasketRequest" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="53">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Marshaller&lt;DeleteBasketRequest&gt; Basket.__Marshaller_BasketApi_DeleteBasketRequest" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="55">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Marshaller&lt;DeleteBasketResponse&gt; Basket.__Marshaller_BasketApi_DeleteBasketResponse" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="57">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="76" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Method&lt;GetBasketRequest, CustomerBasketResponse&gt; Basket.__Method_GetBasket" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="60">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="79" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Method&lt;UpdateBasketRequest, CustomerBasketResponse&gt; Basket.__Method_UpdateBasket" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="68">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="79" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="Method&lt;DeleteBasketRequest, DeleteBasketResponse&gt; Basket.__Method_DeleteBasket" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="76">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="79" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="ServiceDescriptor Basket.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="84">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="ServiceDescriptor Basket.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="86">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="4" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="ServerServiceDefinition Basket.BindService(BasketBase serviceImpl)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="116">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="79" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void Basket.BindService(ServiceBinderBase serviceBinder, BasketBase serviceImpl)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="129">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Basket.__Helper_MessageCache&lt;T&gt;">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="78" />
+                  <Metric Name="CyclomaticComplexity" Value="0" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="5" />
+                  <Metric Name="ExecutableLines" Value="3" />
+                </Metrics>
+                <Members>
+                  <Field Name="bool __Helper_MessageCache&lt;T&gt;.IsBufferMessage" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="33">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                </Members>
+              </NamedType>
+              <NamedType Name="Basket.BasketBase">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="80" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="14" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="23" />
+                  <Metric Name="ExecutableLines" Value="8" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task&lt;CustomerBasketResponse&gt; BasketBase.GetBasket(GetBasketRequest request, ServerCallContext context)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="94">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="84" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;CustomerBasketResponse&gt; BasketBase.UpdateBasket(UpdateBasketRequest request, ServerCallContext context)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="100">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="84" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;DeleteBasketResponse&gt; BasketBase.DeleteBasket(DeleteBasketRequest request, ServerCallContext context)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/BasketGrpc.cs" Line="106">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="84" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="BasketItem">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="72" />
+                  <Metric Name="CyclomaticComplexity" Value="42" />
+                  <Metric Name="ClassCoupling" Value="18" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="234" />
+                  <Metric Name="ExecutableLines" Value="86" />
+                </Metrics>
+                <Members>
+                  <Field Name="MessageParser&lt;BasketItem&gt; BasketItem._parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="409">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="UnknownFieldSet BasketItem._unknownFields" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="410">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="MessageParser&lt;BasketItem&gt; BasketItem.Parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="413">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageParser&lt;BasketItem&gt; BasketItem.Parser.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="413">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor BasketItem.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="417">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor BasketItem.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="418">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="4" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor BasketItem.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="423">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor BasketItem.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="424">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="BasketItem.BasketItem()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="429">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void BasketItem.OnConstruction()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="433">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="BasketItem.BasketItem(BasketItem other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="437">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="BasketItem BasketItem.Clone()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="445">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Field Name="int BasketItem.ProductIdFieldNumber" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="450">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int BasketItem.productId_" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="451">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="int BasketItem.ProductId" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="454">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="98" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int BasketItem.ProductId.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="455">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.ProductId.set" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="456">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="3" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Field Name="int BasketItem.QuantityFieldNumber" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="462">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="int BasketItem.quantity_" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="463">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="int BasketItem.Quantity" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="466">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="98" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int BasketItem.Quantity.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="467">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.Quantity.set" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="468">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="96" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="3" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="bool BasketItem.Equals(object other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="475">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool BasketItem.Equals(BasketItem other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="481">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="13" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int BasketItem.GetHashCode()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="495">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="66" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string BasketItem.ToString()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="507">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void BasketItem.WriteTo(CodedOutputStream output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="513">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="19" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void BasketItem.InternalWriteTo(ref WriteContext output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="534">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="16" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int BasketItem.CalculateSize()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="551">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="63" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void BasketItem.MergeFrom(BasketItem other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="567">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="66" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void BasketItem.MergeFrom(CodedInputStream input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="582">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="28" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void BasketItem.InternalMergeFrom(ref ParseContext input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="612">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="25" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="BasketReflection">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="79" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="12" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="40" />
+                  <Metric Name="ExecutableLines" Value="3" />
+                </Metrics>
+                <Members>
+                  <Property Name="FileDescriptor BasketReflection.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="19">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="FileDescriptor BasketReflection.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="20">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Field Name="FileDescriptor BasketReflection.descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="BasketReflection.BasketReflection()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="24">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="12" />
+                      <Metric Name="SourceLines" Value="27" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="BasketService">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+              <NamedType Name="CustomerBasketResponse">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="29" />
+                  <Metric Name="ClassCoupling" Value="23" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="186" />
+                  <Metric Name="ExecutableLines" Value="65" />
+                </Metrics>
+                <Members>
+                  <Field Name="MessageParser&lt;CustomerBasketResponse&gt; CustomerBasketResponse._parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="222">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="UnknownFieldSet CustomerBasketResponse._unknownFields" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="223">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="MessageParser&lt;CustomerBasketResponse&gt; CustomerBasketResponse.Parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="226">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageParser&lt;CustomerBasketResponse&gt; CustomerBasketResponse.Parser.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="226">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor CustomerBasketResponse.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="230">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor CustomerBasketResponse.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="231">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="4" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor CustomerBasketResponse.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="236">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor CustomerBasketResponse.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="237">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="CustomerBasketResponse.CustomerBasketResponse()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="242">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void CustomerBasketResponse.OnConstruction()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="246">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="CustomerBasketResponse.CustomerBasketResponse(CustomerBasketResponse other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="250">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="CustomerBasketResponse CustomerBasketResponse.Clone()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="257">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Field Name="int CustomerBasketResponse.ItemsFieldNumber" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="262">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="FieldCodec&lt;BasketItem&gt; CustomerBasketResponse._repeated_items_codec" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="263">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="RepeatedField&lt;BasketItem&gt; CustomerBasketResponse.items_" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="265">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="RepeatedField&lt;BasketItem&gt; CustomerBasketResponse.Items" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="268">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="RepeatedField&lt;BasketItem&gt; CustomerBasketResponse.Items.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="269">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="bool CustomerBasketResponse.Equals(object other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="274">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool CustomerBasketResponse.Equals(CustomerBasketResponse other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="280">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="67" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int CustomerBasketResponse.GetHashCode()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="293">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string CustomerBasketResponse.ToString()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="304">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void CustomerBasketResponse.WriteTo(CodedOutputStream output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="310">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void CustomerBasketResponse.InternalWriteTo(ref WriteContext output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="324">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="75" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int CustomerBasketResponse.CalculateSize()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="334">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void CustomerBasketResponse.MergeFrom(CustomerBasketResponse other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="345">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void CustomerBasketResponse.MergeFrom(CodedInputStream input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="355">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void CustomerBasketResponse.InternalMergeFrom(ref ParseContext input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="381">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="67" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="21" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="DeleteBasketRequest">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="77" />
+                  <Metric Name="CyclomaticComplexity" Value="26" />
+                  <Metric Name="ClassCoupling" Value="18" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="160" />
+                  <Metric Name="ExecutableLines" Value="53" />
+                </Metrics>
+                <Members>
+                  <Field Name="MessageParser&lt;DeleteBasketRequest&gt; DeleteBasketRequest._parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="831">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="UnknownFieldSet DeleteBasketRequest._unknownFields" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="832">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="MessageParser&lt;DeleteBasketRequest&gt; DeleteBasketRequest.Parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="835">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageParser&lt;DeleteBasketRequest&gt; DeleteBasketRequest.Parser.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="835">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor DeleteBasketRequest.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="839">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor DeleteBasketRequest.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="840">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="4" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor DeleteBasketRequest.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="845">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor DeleteBasketRequest.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="846">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="DeleteBasketRequest.DeleteBasketRequest()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="851">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketRequest.OnConstruction()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="855">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="DeleteBasketRequest.DeleteBasketRequest(DeleteBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="859">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="DeleteBasketRequest DeleteBasketRequest.Clone()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="865">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool DeleteBasketRequest.Equals(object other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="871">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool DeleteBasketRequest.Equals(DeleteBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="877">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int DeleteBasketRequest.GetHashCode()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="889">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="72" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string DeleteBasketRequest.ToString()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="899">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketRequest.WriteTo(CodedOutputStream output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="905">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketRequest.InternalWriteTo(ref WriteContext output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="918">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int DeleteBasketRequest.CalculateSize()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="927">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="72" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketRequest.MergeFrom(DeleteBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="937">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="78" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketRequest.MergeFrom(CodedInputStream input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="946">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="20" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketRequest.InternalMergeFrom(ref ParseContext input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="968">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="DeleteBasketResponse">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="77" />
+                  <Metric Name="CyclomaticComplexity" Value="26" />
+                  <Metric Name="ClassCoupling" Value="18" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="160" />
+                  <Metric Name="ExecutableLines" Value="53" />
+                </Metrics>
+                <Members>
+                  <Field Name="MessageParser&lt;DeleteBasketResponse&gt; DeleteBasketResponse._parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="992">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="UnknownFieldSet DeleteBasketResponse._unknownFields" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="993">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="MessageParser&lt;DeleteBasketResponse&gt; DeleteBasketResponse.Parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="996">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageParser&lt;DeleteBasketResponse&gt; DeleteBasketResponse.Parser.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="996">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor DeleteBasketResponse.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1000">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor DeleteBasketResponse.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1001">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="4" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor DeleteBasketResponse.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1006">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor DeleteBasketResponse.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1007">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="DeleteBasketResponse.DeleteBasketResponse()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1012">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketResponse.OnConstruction()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1016">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="DeleteBasketResponse.DeleteBasketResponse(DeleteBasketResponse other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1020">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="DeleteBasketResponse DeleteBasketResponse.Clone()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1026">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool DeleteBasketResponse.Equals(object other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1032">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool DeleteBasketResponse.Equals(DeleteBasketResponse other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1038">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int DeleteBasketResponse.GetHashCode()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1050">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="72" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string DeleteBasketResponse.ToString()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1060">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketResponse.WriteTo(CodedOutputStream output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1066">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketResponse.InternalWriteTo(ref WriteContext output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1079">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int DeleteBasketResponse.CalculateSize()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1088">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="72" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketResponse.MergeFrom(DeleteBasketResponse other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1098">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="78" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketResponse.MergeFrom(CodedInputStream input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1107">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="20" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void DeleteBasketResponse.InternalMergeFrom(ref ParseContext input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="1129">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="GetBasketRequest">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="77" />
+                  <Metric Name="CyclomaticComplexity" Value="26" />
+                  <Metric Name="ClassCoupling" Value="18" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="161" />
+                  <Metric Name="ExecutableLines" Value="53" />
+                </Metrics>
+                <Members>
+                  <Field Name="MessageParser&lt;GetBasketRequest&gt; GetBasketRequest._parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="61">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="UnknownFieldSet GetBasketRequest._unknownFields" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="62">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="MessageParser&lt;GetBasketRequest&gt; GetBasketRequest.Parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="65">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageParser&lt;GetBasketRequest&gt; GetBasketRequest.Parser.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="65">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor GetBasketRequest.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="69">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor GetBasketRequest.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="70">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="4" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor GetBasketRequest.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="75">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor GetBasketRequest.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="76">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="GetBasketRequest.GetBasketRequest()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="81">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void GetBasketRequest.OnConstruction()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="85">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="GetBasketRequest.GetBasketRequest(GetBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="89">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="GetBasketRequest GetBasketRequest.Clone()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="95">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool GetBasketRequest.Equals(object other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="101">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool GetBasketRequest.Equals(GetBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="107">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int GetBasketRequest.GetHashCode()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="119">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="72" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string GetBasketRequest.ToString()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="129">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void GetBasketRequest.WriteTo(CodedOutputStream output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="135">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void GetBasketRequest.InternalWriteTo(ref WriteContext output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="148">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int GetBasketRequest.CalculateSize()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="157">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="72" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void GetBasketRequest.MergeFrom(GetBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="167">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="78" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void GetBasketRequest.MergeFrom(CodedInputStream input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="176">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="20" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void GetBasketRequest.InternalMergeFrom(ref ParseContext input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="198">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="UpdateBasketRequest">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="29" />
+                  <Metric Name="ClassCoupling" Value="23" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="186" />
+                  <Metric Name="ExecutableLines" Value="65" />
+                </Metrics>
+                <Members>
+                  <Field Name="MessageParser&lt;UpdateBasketRequest&gt; UpdateBasketRequest._parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="644">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="UnknownFieldSet UpdateBasketRequest._unknownFields" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="645">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="MessageParser&lt;UpdateBasketRequest&gt; UpdateBasketRequest.Parser" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="648">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageParser&lt;UpdateBasketRequest&gt; UpdateBasketRequest.Parser.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="648">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor UpdateBasketRequest.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="652">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="91" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor UpdateBasketRequest.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="653">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="91" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="4" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="MessageDescriptor UpdateBasketRequest.Descriptor" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="658">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="MessageDescriptor UpdateBasketRequest.Descriptor.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="659">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="UpdateBasketRequest.UpdateBasketRequest()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="664">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="90" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UpdateBasketRequest.OnConstruction()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="668">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="UpdateBasketRequest.UpdateBasketRequest(UpdateBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="672">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="UpdateBasketRequest UpdateBasketRequest.Clone()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="679">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Field Name="int UpdateBasketRequest.ItemsFieldNumber" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="684">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="FieldCodec&lt;BasketItem&gt; UpdateBasketRequest._repeated_items_codec" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="685">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="RepeatedField&lt;BasketItem&gt; UpdateBasketRequest.items_" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="687">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Field>
+                  <Property Name="RepeatedField&lt;BasketItem&gt; UpdateBasketRequest.Items" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="690">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="RepeatedField&lt;BasketItem&gt; UpdateBasketRequest.Items.get" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="691">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="bool UpdateBasketRequest.Equals(object other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="696">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool UpdateBasketRequest.Equals(UpdateBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="702">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="67" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="7" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int UpdateBasketRequest.GetHashCode()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="715">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string UpdateBasketRequest.ToString()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="726">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UpdateBasketRequest.WriteTo(CodedOutputStream output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="732">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UpdateBasketRequest.InternalWriteTo(ref WriteContext output)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="746">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="75" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int UpdateBasketRequest.CalculateSize()" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="756">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="12" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UpdateBasketRequest.MergeFrom(UpdateBasketRequest other)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="767">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="6" />
+                      <Metric Name="SourceLines" Value="9" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UpdateBasketRequest.MergeFrom(CodedInputStream input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="777">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="void UpdateBasketRequest.InternalMergeFrom(ref ParseContext input)" File="/workspaces/eShop/artifacts/obj/Basket.API/debug/Proto/Basket.cs" Line="803">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="67" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="21" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Basket.API.IntegrationEvents.EventHandling">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="0" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="13" />
+              <Metric Name="ExecutableLines" Value="0" />
+            </Metrics>
+            <Types>
+              <NamedType Name="OrderStartedIntegrationEventHandler">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Basket.API.IntegrationEvents.EventHandling.Events">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="1" />
+              <Metric Name="DepthOfInheritance" Value="2" />
+              <Metric Name="SourceLines" Value="6" />
+              <Metric Name="ExecutableLines" Value="0" />
+            </Metrics>
+            <Types>
+              <NamedType Name="OrderStartedIntegrationEvent">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="4" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="OrderStartedIntegrationEvent.OrderStartedIntegrationEvent(string UserId)" File="/workspaces/eShop/src/Basket.API/IntegrationEvents/Events/OrderStartedIntegrationEvent.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="string OrderStartedIntegrationEvent.UserId" File="/workspaces/eShop/src/Basket.API/IntegrationEvents/Events/OrderStartedIntegrationEvent.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Property>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Basket.API.Model">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="97" />
+              <Metric Name="CyclomaticComplexity" Value="22" />
+              <Metric Name="ClassCoupling" Value="8" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="39" />
+              <Metric Name="ExecutableLines" Value="6" />
+            </Metrics>
+            <Types>
+              <NamedType Name="BasketItem">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="94" />
+                  <Metric Name="CyclomaticComplexity" Value="16" />
+                  <Metric Name="ClassCoupling" Value="6" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="22" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Property Name="string BasketItem.Id" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string BasketItem.Id.get" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.Id.set" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="int BasketItem.ProductId" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="6">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int BasketItem.ProductId.get" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="6">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.ProductId.set" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="6">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string BasketItem.ProductName" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string BasketItem.ProductName.get" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.ProductName.set" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="decimal BasketItem.UnitPrice" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="decimal BasketItem.UnitPrice.get" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.UnitPrice.set" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="8">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="decimal BasketItem.OldUnitPrice" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="decimal BasketItem.OldUnitPrice.get" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="9">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.OldUnitPrice.set" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="9">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="1" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="int BasketItem.Quantity" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="int BasketItem.Quantity.get" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.Quantity.set" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="10">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="string BasketItem.PictureUrl" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string BasketItem.PictureUrl.get" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="11">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void BasketItem.PictureUrl.set" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="11">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="IEnumerable&lt;ValidationResult&gt; BasketItem.Validate(ValidationContext validationContext)" File="/workspaces/eShop/src/Basket.API/Model/BasketItem.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="74" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="CustomerBasket">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="6" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="13" />
+                  <Metric Name="ExecutableLines" Value="2" />
+                </Metrics>
+                <Members>
+                  <Property Name="string CustomerBasket.BuyerId" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string CustomerBasket.BuyerId.get" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void CustomerBasket.BuyerId.set" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="5">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="List&lt;BasketItem&gt; CustomerBasket.Items" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="List&lt;BasketItem&gt; CustomerBasket.Items.get" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                      <Method Name="void CustomerBasket.Items.set" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="7">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="2" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="0" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Method Name="CustomerBasket.CustomerBasket()" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="CustomerBasket.CustomerBasket(string customerId)" File="/workspaces/eShop/src/Basket.API/Model/CustomerBasket.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.Basket.API.Repositories">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="4" />
+              <Metric Name="ClassCoupling" Value="2" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="54" />
+              <Metric Name="ExecutableLines" Value="0" />
+            </Metrics>
+            <Types>
+              <NamedType Name="IBasketRepository">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="0" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task&lt;CustomerBasket&gt; IBasketRepository.GetBasketAsync(string customerId)" File="/workspaces/eShop/src/Basket.API/Repositories/IBasketRepository.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;CustomerBasket&gt; IBasketRepository.UpdateBasketAsync(CustomerBasket basket)" File="/workspaces/eShop/src/Basket.API/Repositories/IBasketRepository.cs" Line="8">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;bool&gt; IBasketRepository.DeleteBasketAsync(string id)" File="/workspaces/eShop/src/Basket.API/Repositories/IBasketRepository.cs" Line="9">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="RedisBasketRepository">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="eShop.AppHost.csproj">
+      <Assembly Name="eShop.AppHost, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="72" />
+          <Metric Name="CyclomaticComplexity" Value="63" />
+          <Metric Name="ClassCoupling" Value="77" />
+          <Metric Name="DepthOfInheritance" Value="1" />
+          <Metric Name="SourceLines" Value="631" />
+          <Metric Name="ExecutableLines" Value="253" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="&lt;global namespace&gt;">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="32" />
+              <Metric Name="CyclomaticComplexity" Value="12" />
+              <Metric Name="ClassCoupling" Value="30" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="113" />
+              <Metric Name="ExecutableLines" Value="76" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Program">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="32" />
+                  <Metric Name="CyclomaticComplexity" Value="12" />
+                  <Metric Name="ClassCoupling" Value="30" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="113" />
+                  <Metric Name="ExecutableLines" Value="76" />
+                </Metrics>
+                <Members>
+                  <Method Name="&lt;top-level-statements-entry-point&gt;" File="/workspaces/eShop/src/eShop.AppHost/Program.cs" Line="1">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="41" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="30" />
+                      <Metric Name="SourceLines" Value="113" />
+                      <Metric Name="ExecutableLines" Value="38" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="eShop.AppHost">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="74" />
+              <Metric Name="CyclomaticComplexity" Value="12" />
+              <Metric Name="ClassCoupling" Value="57" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="245" />
+              <Metric Name="ExecutableLines" Value="79" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Extensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="52" />
+                  <Metric Name="CyclomaticComplexity" Value="9" />
+                  <Metric Name="ClassCoupling" Value="41" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="235" />
+                  <Metric Name="ExecutableLines" Value="73" />
+                </Metrics>
+                <Members>
+                  <Method Name="IDistributedApplicationBuilder Extensions.AddForwardedHeaders(IDistributedApplicationBuilder builder)" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="22">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IDistributedApplicationBuilder Extensions.AddOpenAI(IDistributedApplicationBuilder builder, IResourceBuilder&lt;ProjectResource&gt; catalogApi, IResourceBuilder&lt;ProjectResource&gt; webApp, OpenAITarget openAITarget)" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="52">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="42" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="20" />
+                      <Metric Name="SourceLines" Value="111" />
+                      <Metric Name="ExecutableLines" Value="39" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IDistributedApplicationBuilder Extensions.AddOllama(IDistributedApplicationBuilder builder, IResourceBuilder&lt;ProjectResource&gt; catalogApi, IResourceBuilder&lt;ProjectResource&gt; webApp)" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="164">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="66" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="13" />
+                      <Metric Name="SourceLines" Value="23" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IResourceBuilder&lt;YarpResource&gt; Extensions.ConfigureMobileBffRoutes(IResourceBuilder&lt;YarpResource&gt; builder, IResourceBuilder&lt;ProjectResource&gt; catalogApi, IResourceBuilder&lt;ProjectResource&gt; orderingApi, IResourceBuilder&lt;ProjectResource&gt; identityApi)" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="185">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="48" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="16" />
+                      <Metric Name="SourceLines" Value="65" />
+                      <Metric Name="ExecutableLines" Value="26" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Extensions.AddForwardHeadersSubscriber">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="69" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="18" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="20" />
+                  <Metric Name="ExecutableLines" Value="6" />
+                </Metrics>
+                <Members>
+                  <Method Name="Task AddForwardHeadersSubscriber.SubscribeAsync(IDistributedApplicationEventing eventing, DistributedApplicationExecutionContext executionContext, CancellationToken cancellationToken)" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="30">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="17" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OpenAITarget">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Field Name="OpenAITarget.OpenAI" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="OpenAITarget.AzureOpenAI" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="12">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="OpenAITarget.AzureOpenAIExisting" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="13">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Field Name="OpenAITarget.AzureOpenAIExistingWithKey" File="/workspaces/eShop/src/eShop.AppHost/Extensions.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Projects">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="75" />
+              <Metric Name="CyclomaticComplexity" Value="39" />
+              <Metric Name="ClassCoupling" Value="4" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="273" />
+              <Metric Name="ExecutableLines" Value="98" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Basket_API">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string Basket_API.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Basket_API.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string Basket_API.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Basket_API.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool Basket_API.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Basket_API.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool Basket_API.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Basket_API.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="Catalog_API">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string Catalog_API.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Catalog_API.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string Catalog_API.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Catalog_API.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool Catalog_API.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Catalog_API.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool Catalog_API.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Catalog_API.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="eShop_AppHost">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="77" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="3" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="17" />
+                  <Metric Name="ExecutableLines" Value="8" />
+                </Metrics>
+                <Members>
+                  <Method Name="eShop_AppHost.eShop_AppHost()" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/_AppHost.ProjectMetadata.g.cs" Line="15">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Property Name="string eShop_AppHost.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/_AppHost.ProjectMetadata.g.cs" Line="20">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string eShop_AppHost.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/_AppHost.ProjectMetadata.g.cs" Line="20">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="Identity_API">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string Identity_API.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Identity_API.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string Identity_API.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Identity_API.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool Identity_API.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Identity_API.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool Identity_API.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Identity_API.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="Ordering_API">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string Ordering_API.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Ordering_API.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string Ordering_API.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Ordering_API.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool Ordering_API.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Ordering_API.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool Ordering_API.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Ordering_API.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="OrderProcessor">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string OrderProcessor.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/OrderProcessor.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string OrderProcessor.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/OrderProcessor.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool OrderProcessor.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/OrderProcessor.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool OrderProcessor.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/OrderProcessor.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="PaymentProcessor">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string PaymentProcessor.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/PaymentProcessor.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string PaymentProcessor.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/PaymentProcessor.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool PaymentProcessor.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/PaymentProcessor.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool PaymentProcessor.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/PaymentProcessor.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="WebApp">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string WebApp.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebApp.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebApp.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebApp.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool WebApp.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebApp.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool WebApp.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebApp.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="WebhookClient">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string WebhookClient.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebhookClient.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string WebhookClient.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebhookClient.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool WebhookClient.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebhookClient.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool WebhookClient.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/WebhookClient.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+              <NamedType Name="Webhooks_API">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="24" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                </Metrics>
+                <Members>
+                  <Property Name="string Webhooks_API.ProjectPath" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Webhooks_API.ProjectMetadata.g.cs" Line="18">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="string Webhooks_API.ProjectPath.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Webhooks_API.ProjectMetadata.g.cs" Line="18">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                  <Property Name="bool Webhooks_API.SuppressBuild" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Webhooks_API.ProjectMetadata.g.cs" Line="27">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                    <Accessors>
+                      <Method Name="bool Webhooks_API.SuppressBuild.get" File="/workspaces/eShop/artifacts/obj/eShop.AppHost/debug/Aspire/references/Webhooks_API.ProjectMetadata.g.cs" Line="27">
+                        <Metrics>
+                          <Metric Name="MaintainabilityIndex" Value="100" />
+                          <Metric Name="CyclomaticComplexity" Value="1" />
+                          <Metric Name="ClassCoupling" Value="0" />
+                          <Metric Name="SourceLines" Value="1" />
+                          <Metric Name="ExecutableLines" Value="1" />
+                        </Metrics>
+                      </Method>
+                    </Accessors>
+                  </Property>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>

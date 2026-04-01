@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="eShop.ServiceDefaults.csproj">
+      <Assembly Name="eShop.ServiceDefaults, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="76" />
+          <Metric Name="CyclomaticComplexity" Value="61" />
+          <Metric Name="ClassCoupling" Value="150" />
+          <Metric Name="DepthOfInheritance" Value="3" />
+          <Metric Name="SourceLines" Value="489" />
+          <Metric Name="ExecutableLines" Value="175" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="eShop.ServiceDefaults">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="74" />
+              <Metric Name="CyclomaticComplexity" Value="58" />
+              <Metric Name="ClassCoupling" Value="148" />
+              <Metric Name="DepthOfInheritance" Value="3" />
+              <Metric Name="SourceLines" Value="489" />
+              <Metric Name="ExecutableLines" Value="174" />
+            </Metrics>
+            <Types>
+              <NamedType Name="AuthenticationExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="55" />
+                  <Metric Name="CyclomaticComplexity" Value="2" />
+                  <Metric Name="ClassCoupling" Value="18" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="49" />
+                  <Metric Name="ExecutableLines" Value="16" />
+                </Metrics>
+                <Members>
+                  <Method Name="IServiceCollection AuthenticationExtensions.AddDefaultAuthentication(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/eShop.ServiceDefaults/AuthenticationExtensions.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="55" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="18" />
+                      <Metric Name="SourceLines" Value="46" />
+                      <Metric Name="ExecutableLines" Value="16" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="ClaimsPrincipalExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="86" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="8" />
+                  <Metric Name="ExecutableLines" Value="3" />
+                </Metrics>
+                <Members>
+                  <Method Name="string? ClaimsPrincipalExtensions.GetUserId(ClaimsPrincipal principal)" File="/workspaces/eShop/src/eShop.ServiceDefaults/ClaimsPrincipalExtensions.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="92" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string? ClaimsPrincipalExtensions.GetUserName(ClaimsPrincipal principal)" File="/workspaces/eShop/src/eShop.ServiceDefaults/ClaimsPrincipalExtensions.cs" Line="10">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="83" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Extensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="63" />
+                  <Metric Name="CyclomaticComplexity" Value="17" />
+                  <Metric Name="ClassCoupling" Value="76" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="182" />
+                  <Metric Name="ExecutableLines" Value="66" />
+                </Metrics>
+                <Members>
+                  <Method Name="IHostApplicationBuilder Extensions.AddServiceDefaults(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/eShop.ServiceDefaults/Extensions.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="9" />
+                      <Metric Name="SourceLines" Value="17" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IHostApplicationBuilder Extensions.AddBasicServiceDefaults(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/eShop.ServiceDefaults/Extensions.cs" Line="40">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="15" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IHostApplicationBuilder Extensions.ConfigureOpenTelemetry(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/eShop.ServiceDefaults/Extensions.cs" Line="50">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="61" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="21" />
+                      <Metric Name="SourceLines" Value="34" />
+                      <Metric Name="ExecutableLines" Value="10" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IHostApplicationBuilder Extensions.AddOpenTelemetryExporters(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/eShop.ServiceDefaults/Extensions.cs" Line="85">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="13" />
+                      <Metric Name="SourceLines" Value="13" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IHostApplicationBuilder Extensions.AddDefaultHealthChecks(IHostApplicationBuilder builder)" File="/workspaces/eShop/src/eShop.ServiceDefaults/Extensions.cs" Line="99">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="79" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="7" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="WebApplication Extensions.MapDefaultEndpoints(WebApplication app)" File="/workspaces/eShop/src/eShop.ServiceDefaults/Extensions.cs" Line="108">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="11" />
+                      <Metric Name="SourceLines" Value="21" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IApplicationBuilder Extensions.UseDefaultOpenApi(WebApplication app)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApi.Extensions.cs" Line="14">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="61" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="21" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="IHostApplicationBuilder Extensions.AddDefaultOpenApi(IHostApplicationBuilder builder, IApiVersioningBuilder? apiVersioning = null)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApi.Extensions.cs" Line="39">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="53" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="22" />
+                      <Metric Name="SourceLines" Value="37" />
+                      <Metric Name="ExecutableLines" Value="19" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="HttpClientExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="77" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="5" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="44" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                </Metrics>
+                <Members>
+                  <Method Name="IHttpClientBuilder HttpClientExtensions.AddAuthToken(IHttpClientBuilder builder)" File="/workspaces/eShop/src/eShop.ServiceDefaults/HttpClientExtensions.cs" Line="11">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="HttpClientExtensions.HttpClientAuthorizationDelegatingHandler">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="80" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="11" />
+                  <Metric Name="DepthOfInheritance" Value="3" />
+                  <Metric Name="SourceLines" Value="29" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                </Metrics>
+                <Members>
+                  <Field Name="IHttpContextAccessor HttpClientAuthorizationDelegatingHandler._httpContextAccessor" File="/workspaces/eShop/src/eShop.ServiceDefaults/HttpClientExtensions.cs" Line="24">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="0" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="1" />
+                      <Metric Name="ExecutableLines" Value="0" />
+                    </Metrics>
+                  </Field>
+                  <Method Name="HttpClientAuthorizationDelegatingHandler.HttpClientAuthorizationDelegatingHandler(IHttpContextAccessor httpContextAccessor)" File="/workspaces/eShop/src/eShop.ServiceDefaults/HttpClientExtensions.cs" Line="26">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="96" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="HttpClientAuthorizationDelegatingHandler.HttpClientAuthorizationDelegatingHandler(IHttpContextAccessor httpContextAccessor, HttpMessageHandler innerHandler)" File="/workspaces/eShop/src/eShop.ServiceDefaults/HttpClientExtensions.cs" Line="31">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task&lt;HttpResponseMessage&gt; HttpClientAuthorizationDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)" File="/workspaces/eShop/src/eShop.ServiceDefaults/HttpClientExtensions.cs" Line="36">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="70" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="10" />
+                      <Metric Name="SourceLines" Value="14" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OpenApiOptionsExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="58" />
+                  <Metric Name="CyclomaticComplexity" Value="28" />
+                  <Metric Name="ClassCoupling" Value="58" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="194" />
+                  <Metric Name="ExecutableLines" Value="78" />
+                </Metrics>
+                <Members>
+                  <Method Name="OpenApiOptions OpenApiOptionsExtensions.ApplyApiVersionInfo(OpenApiOptions options, string title, string description)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApiOptionsExtensions.cs" Line="16">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="60" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="16" />
+                      <Metric Name="SourceLines" Value="18" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="string OpenApiOptionsExtensions.BuildDescription(ApiVersionDescription api, string description)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApiOptionsExtensions.cs" Line="35">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="47" />
+                      <Metric Name="CyclomaticComplexity" Value="12" />
+                      <Metric Name="ClassCoupling" Value="14" />
+                      <Metric Name="SourceLines" Value="66" />
+                      <Metric Name="ExecutableLines" Value="28" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="OpenApiOptions OpenApiOptionsExtensions.ApplySecuritySchemeDefinitions(OpenApiOptions options)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApiOptionsExtensions.cs" Line="102">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="OpenApiOptions OpenApiOptionsExtensions.ApplyAuthorizationChecks(OpenApiOptions options, string[] scopes)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApiOptionsExtensions.cs" Line="108">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="20" />
+                      <Metric Name="SourceLines" Value="29" />
+                      <Metric Name="ExecutableLines" Value="11" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="OpenApiOptions OpenApiOptionsExtensions.ApplyOperationDeprecatedStatus(OpenApiOptions options)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApiOptionsExtensions.cs" Line="138">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="72" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="8" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="OpenApiOptions OpenApiOptionsExtensions.ApplyApiVersionDescription(OpenApiOptions options)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApiOptionsExtensions.cs" Line="149">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="62" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="17" />
+                      <Metric Name="SourceLines" Value="25" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Task OpenApiOptionsExtensions.TransformAsync(OpenApiDocument document, OpenApiDocumentTransformerContext context, CancellationToken cancellationToken)" File="/workspaces/eShop/src/eShop.ServiceDefaults/OpenApiOptionsExtensions.cs" Line="177">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="58" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="19" />
+                      <Metric Name="SourceLines" Value="29" />
+                      <Metric Name="ExecutableLines" Value="12" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="OpenApiOptionsExtensions.SecuritySchemeDefinitionsTransformer">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="1" />
+                  <Metric Name="ExecutableLines" Value="0" />
+                </Metrics>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="Microsoft.Extensions.Configuration">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="87" />
+              <Metric Name="CyclomaticComplexity" Value="3" />
+              <Metric Name="ClassCoupling" Value="4" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="0" />
+              <Metric Name="ExecutableLines" Value="1" />
+            </Metrics>
+            <Types>
+              <NamedType Name="ConfigurationExtensions">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="87" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="4" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="5" />
+                  <Metric Name="ExecutableLines" Value="1" />
+                </Metrics>
+                <Members>
+                  <Method Name="string ConfigurationExtensions.GetRequiredValue(IConfiguration configuration, string name)" File="/workspaces/eShop/src/eShop.ServiceDefaults/ConfigurationExtensions.cs" Line="5">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="87" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>
