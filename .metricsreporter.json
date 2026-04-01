@@ -4,7 +4,8 @@
     "aggregateAfterScripts": true,
     "verbosity": "normal",
     "timeoutSeconds": 900,
-    "logTruncationLimit": 4000
+    "logTruncationLimit": 4000,
+    "editorPrefix": "vscode://vscode-remote/codespaces%2Bfriendly-chainsaw-74xp645974gcp6xx/"
   },
   "paths": {
     "metricsDir": "Metrics",
@@ -64,7 +65,7 @@
     "suppressedSymbols": "Metrics/MetricsTemp/SuppressedSymbols.g.json",
     "sourceCodeFolders": [ "src", "tests" ],
     "baselineStoragePath": "Metrics/MetricsTemp/BaselineStorage",
-     "coverageHtmlDir": "http://127.0.0.1:8001/ReportGenerator/",
+    "coverageHtmlDir": "http://127.0.0.1:8001/ReportGenerator/",
     "solutionDirectory": ".",
     "excludedMembers": "*b__*,*d__*,<Create>*,*<Main>*,<Clone>$,ctor,cctor,MoveNext,SetStateMachine,MoveNextAsync,DisposeAsync,Deconstruct,GetHashCode,ToString,Equals,PrintMembers,op_Equality,op_Inequality,get_*,set_*,add_*,remove_*",
     "excludedTypes": "<>c,<-ctor>",

@@ -38,6 +38,10 @@ builder.Services.AddIdentityServer(options =>
 
 builder.Services.AddTransient<IProfileService, ProfileService>();
 builder.Services.AddTransient<ILoginService<ApplicationUser>, EFLoginService>();
+builder.Services.AddTransient<IAccountViewModelService, AccountViewModelService>();
+builder.Services.AddTransient<IConsentWorkflowService, ConsentWorkflowService>();
+builder.Services.AddTransient<IDeviceAuthorizationWorkflowService, DeviceAuthorizationWorkflowService>();
+builder.Services.AddTransient<IExternalLoginService, ExternalLoginService>();
 builder.Services.AddTransient<IRedirectService, RedirectService>();
 
 var app = builder.Build();

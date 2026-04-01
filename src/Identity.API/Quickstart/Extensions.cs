@@ -19,4 +19,44 @@ public static class Extensions
 
         return controller.View(viewName, new RedirectViewModel { RedirectUrl = redirectUri });
     }
+
+    /// <summary>
+    /// Creates the appropriate redirect response after the user completes login.
+    /// </summary>
+    public static IActionResult RedirectToReturnUrl(this Controller controller, string returnUrl, AuthorizationRequest context)
+    {
+        if (context is not null)
+        {
+            return context.IsNativeClient()
+                ? controller.LoadingPage("Redirect", returnUrl)
+                : controller.Redirect(returnUrl);
+        }
+
+        if (controller.Url.IsLocalUrl(returnUrl))
+        {
+            return controller.Redirect(returnUrl);
+        }
+
+        if (string.IsNullOrEmpty(returnUrl))
+        {
+            return controller.Redirect("~/");
+        }
+
+        throw new Exception("invalid return URL");
+    }
+
+    /// <summary>
+    /// Creates the appropriate redirect response after the user cancels login.
+    /// </summary>
+    public static IActionResult RedirectAfterCancellation(this Controller controller, string returnUrl, AuthorizationRequest context)
+    {
+        if (context is null)
+        {
+            return controller.Redirect("~/");
+        }
+
+        return context.IsNativeClient()
+            ? controller.LoadingPage("Redirect", returnUrl)
+            : controller.Redirect(returnUrl);
+    }
 }
