@@ -1,3 +1,79 @@
+# MetricsReporter Demonstration on dotnet/eShop
+
+This fork is intentionally used as a test and demonstration repository for MetricsReporter on a real third-party codebase: [dotnet/eShop](https://github.com/dotnet/eShop). The goal is not to redefine eShop itself, but to show what it takes to wire MetricsReporter into an existing production-style solution, generate a complete metrics baseline, and then use those signals to drive an AI-assisted refactoring workflow.
+
+## What This Repository Demonstrates
+
+- MetricsReporter configured against a non-trivial external repository rather than a toy sample.
+- End-to-end collection of Roslyn metrics, SARIF diagnostics, OpenCover coverage artifacts, and ReportGenerator HTML output.
+- A concrete AI-assisted refactoring example, driven by a prepared prompt and validated through the generated report.
+- Why a consolidated report matters when one "improvement" simply redistributes complexity instead of truly reducing it.
+
+## Validation Environment
+
+The setup and validation work in this repository were executed in GitHub Codespaces on Ubuntu 24.04.3 LTS (Noble Numbat).
+
+To inspect the generated HTML assets locally, a simple static server was used from the repository root:
+
+```bash
+python3 -m http.server 8001 --directory Metrics/
+```
+
+After that, the generated files were opened through localhost, for example:
+
+- `http://127.0.0.1:8001/MetricsReport.html`
+- `http://127.0.0.1:8001/ReportGenerator/`
+
+## How The Repository Was Prepared
+
+The full setup history is preserved in the `mr` branch. The sequence of commits is intentionally structured as a walkthrough, so the quickest way to understand the implementation details is to read the commit descriptions in that branch.
+
+![MetricsReporter setup history](Metrics/GitPictures/git%20history.png)
+
+The setup is best understood as a staged pipeline: establish build and test stability first, then generate coverage, Roslyn metrics, and SARIF diagnostics, then wire those artifacts into MetricsReporter, and finally use the resulting report as the feedback loop for an AI-assisted refactoring pass. The screenshot above exists mainly to show that this was captured as a reproducible branch history rather than described only in prose.
+
+The most demanding part was artifact orchestration rather than any single command. Roslyn metrics, SARIF logs, coverage data, and ReportGenerator output all had to be generated consistently and in locations that MetricsReporter could consume without ambiguity. In practice, that orchestration was reduced to three PowerShell scripts:
+
+1. `Metrics/Scripts/collect-coverage.ps1` runs the repository coverage target and produces OpenCover XML, plus the aggregated ReportGenerator HTML output.
+2. `Metrics/Scripts/collect-sarif-and-roslyn.ps1` performs a solution build that refreshes Roslyn XML metrics and compiler-generated SARIF diagnostics.
+3. `Metrics/Scripts/refresh-report.ps1` re-aggregates the final JSON and HTML report from the already generated artifacts, without rebuilding or retesting.
+
+The most sensitive file in that process is `.metricsreporter.json`: it binds those scripts to specific metrics, defines artifact locations, names the report outputs, configures aliases, and controls how navigation works inside the generated report. Small mistakes there can make the final report incomplete, stale, or misleading. In this repository, that file became the control plane for the whole experiment.
+
+One especially important implementation detail from the `mr` branch is the Roslyn metrics setup on Linux. The metrics generation flow was adapted so it works in a Codespaces-based Ubuntu environment, including the handling required to execute the Roslyn metrics tooling reliably outside a Windows Visual Studio installation.
+
+## Key Refactoring Example
+
+The central demonstration in this repository is an AI-assisted refactoring pass focused on the `Cyclomatic Complexity` metric in the `IdentityServerHost.Quickstart.UI` namespace.
+
+For that step, the repository includes pre-authored prompts in `Metrics/Agent`, and the refactoring request was sent to the AI agent through the VS Code chat experience using GPT-5.4 Medium Thinking.
+
+![Prompt used for the refactoring step](Metrics/GitPictures/chat.png)
+
+The prompt asked the agent to improve complexity in `IdentityServerHost.Quickstart.UI` using the prepared instructions from `Metrics/Agent/refactor-complexity.md`.
+
+## Result: Why MetricsReporter Matters
+
+Before refactoring, the namespace showed a concentrated complexity problem, with several members clearly exceeding acceptable thresholds.
+
+![Metrics before refactoring](Metrics/GitPictures/before.png)
+
+After the AI-driven change, the report shows that the original namespace complexity dropped substantially, but the work did not actually eliminate the complexity burden. Instead, the agent split logic into a new namespace and introduced additional classes and methods that also crossed the acceptable limits for the same metric.
+
+![Metrics after refactoring](Metrics/GitPictures/after.png)
+
+That is the core value of MetricsReporter in this exercise: without a unified view across namespaces, members, deltas, and newly introduced symbols, it would be very difficult to see the whole outcome. A superficial review might conclude that complexity was improved because the original namespace number went down. The report makes the broader picture visible: complexity was redistributed, not fully resolved.
+
+## Open The Generated Report
+
+The published report is available here:
+
+- [Metrics Report for eShop](https://baidakovil.github.io/eShop/MetricsReport.html)
+
+The source HTML is still committed in this repository at [Metrics/MetricsReport.html](Metrics/MetricsReport.html), but the link above is the one intended for browser viewing on GitHub via GitHub Pages. When working locally in Codespaces, the localhost-based static server remains the simplest way to inspect regenerated outputs before publishing them.
+
+# ORIGINAL ESHOP README BELOW
+
 # eShop Reference Application - "AdventureWorks"
 
 A reference .NET application implementing an e-commerce website using a services-based architecture using [.NET Aspire](https://learn.microsoft.com/dotnet/aspire/).
